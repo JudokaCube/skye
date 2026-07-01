@@ -1,135 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Legal - Terms & Privacy</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0b0f14;
-      color: #e6faff;
-      line-height: 1.6;
-    }
-
-    header {
-      background: #00e5ff;
-      color: #001418;
-      padding: 30px 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 32px;
-    }
-
-    nav {
-      background: #061017;
-      padding: 10px;
-      text-align: center;
-      position: sticky;
-      top: 0;
-    }
-
-    nav a {
-      color: #00e5ff;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      color: white;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 30px 20px;
-    }
-
-    h2 {
-      color: #00e5ff;
-      border-bottom: 1px solid #00e5ff33;
-      padding-bottom: 5px;
-      margin-top: 40px;
-    }
-
-    section {
-      margin-bottom: 30px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #061017;
-      color: #88f3ff;
-      margin-top: 40px;
-    }
-
-    .card {
-      background: #0f1720;
-      padding: 20px;
-      border-left: 4px solid #00e5ff;
-      border-radius: 8px;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skye — Discord Bot</title>
+  <meta name="description" content="Skye, a discord.py utility bot with 60+ commands." />
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=2" />
+  <script>
+    (function () {
+      var saved = localStorage.getItem('jdkcube-theme');
+      if (saved === 'light') document.documentElement.setAttribute('data-theme', 'light');
+    })();
+  </script>
 </head>
+<body class="dashboard-body skye-body">
 
-<body>
+  <div class="dash-bg-grid"></div>
+  <div class="dash-glow"></div>
 
-<header>
-  <h1>Legal Information</h1>
-  <p>Terms of Service & Privacy Policy</p>
-</header>
+  <main class="dashboard skye-dashboard">
 
-<nav>
-  <a href="#terms">Terms</a>
-  <a href="#privacy">Privacy</a>
-</nav>
+    <a class="skye-back" href="https://judokacube.github.io">← main site</a>
 
-<div class="container">
+    <header class="dash-hero fade-in">
+      <span class="dash-eyebrow">discord bot</span>
+      <h1 class="dash-title">Skye</h1>
+      <p class="dash-desc">python · discord.py · 60+ commands</p>
+    </header>
 
-  <section id="terms">
-    <h2>Terms of Service</h2>
-    <div class="card">
-      <p>By using this Discord bot, you agree to the following terms.</p>
+    <div class="skye-tile-grid">
 
-      <p><strong>Usage:</strong> The bot is provided for general utility and entertainment. You must not use it for illegal, harmful, or abusive actions.</p>
+      <!-- COMMAND LIST TILE -->
+      <!-- BOT MINI PROFILE TILE -->
+      <section class="tile skye-tile-profile" aria-label="Skye bot profile">
+        <div class="tile-spotlight" aria-hidden="true"></div>
 
-      <p><strong>Availability:</strong> Features may change, be updated, or removed at any time without notice.</p>
+        <div class="skye-profile-banner"></div>
 
-      <p><strong>Liability:</strong> The developer is not responsible for any damages, losses, or issues caused by the bot.</p>
+        <div class="skye-profile-avatar-row">
+          <div class="skye-profile-avatar-wrap">
+            <div class="skye-profile-avatar">
+              <img src="assets/skyepfp.jpeg" alt="Skye avatar" class="skye-profile-avatar-img" />
+            </div>
+            <span class="skye-profile-status" title="uptime is low — usually offline"></span>
+          </div>
+        </div>
 
-      <p><strong>Changes:</strong> These terms may be updated at any time. Continued use means acceptance of changes.</p>
+        <div class="skye-profile-body">
+          <div class="skye-profile-names">
+            <span class="skye-profile-name">Skye</span>
+            <span class="skye-profile-tag">BOT</span>
+          </div>
+          <p class="skye-profile-bio">a multi-purpose discord utility bot — moderation, economy, fun, tools and more, all in one.</p>
+          <div class="skye-profile-chips">
+            <span class="skye-profile-chip">🛡️ moderation</span>
+            <span class="skye-profile-chip">💰 economy</span>
+            <span class="skye-profile-chip">🎮 fun</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- COMMAND LIST TILE -->
+      <button class="tile skye-tile-commands" id="openCommands" aria-haspopup="dialog">
+        <div class="tile-spotlight" aria-hidden="true"></div>
+        <div class="skye-commands-icon">📜</div>
+        <h3 class="skye-commands-title">Command List</h3>
+        <p class="skye-commands-desc">every command Skye has, searchable by name, alias or category</p>
+        <span class="skye-commands-badge">prefix: <code>.</code></span>
+        <span class="tile-launch-arrow skye-commands-arrow">↗</span>
+      </button>
+
+      <!-- INVITE TILE -->
+      <section class="tile skye-tile-invite" aria-label="Invite Skye to your server">
+        <div class="tile-spotlight" aria-hidden="true"></div>
+
+        <div class="tile-head">
+          <span class="tile-label">// invite</span>
+        </div>
+
+        <p class="skye-invite-text">add Skye to your own server, free, no strings attached.</p>
+
+        <a
+          class="skye-invite-btn"
+          href="https://discord.com/oauth2/authorize?client_id=1513500353658617926&permissions=8&integration_type=0&scope=bot+applications.commands"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span>Add to Discord</span>
+          <span class="skye-invite-btn-arrow">↗</span>
+        </a>
+
+        <div class="skye-disclaimer">
+          ⚠️ Skye is actively in development and doesn't have proper hosting yet, so <b>uptime is low</b> — it may be offline outside of testing sessions.
+        </div>
+      </section>
+
+      <!-- TERMS & PRIVACY TILE -->
+      <button class="tile skye-tile-terms" id="openTerms" aria-haspopup="dialog">
+        <div class="tile-spotlight" aria-hidden="true"></div>
+        <div class="skye-commands-icon">📄</div>
+        <h3 class="skye-commands-title">Terms &amp; Privacy</h3>
+        <p class="skye-commands-desc">terms of service and privacy policy for using Skye</p>
+        <span class="skye-commands-badge">legal</span>
+        <span class="tile-launch-arrow skye-commands-arrow">↗</span>
+      </button>
+
     </div>
-  </section>
+  </main>
 
-  <section id="privacy">
-    <h2>Privacy Policy</h2>
-    <div class="card">
-      <p><strong>Data Collection:</strong> This bot may collect user IDs, server IDs, and command usage data only for functionality.</p>
+  <!-- ░░ COMMANDS MODAL ░░ -->
+  <div class="modal-overlay" id="commandsModal" role="dialog" aria-modal="true" aria-label="Skye command list">
+    <div class="modal-box book-modal-box">
+      <button class="modal-close" id="closeCommands" aria-label="Close command list">✕</button>
 
-      <p><strong>Use of Data:</strong> Data is used to operate features, improve performance, and prevent abuse.</p>
+      <div class="book-modal-card">
+        <div class="book-modal-label">// skye commands</div>
+        <h2 class="book-modal-title">Skye Command List</h2>
+        <p class="book-modal-sub">Every command Skye has, grouped by category, with aliases and a short explanation. Default prefix is <code>.</code></p>
 
-      <p><strong>Sharing:</strong> No personal data is sold or shared with third parties.</p>
+        <div class="book-search-row">
+          <span class="book-search-icon">🔍</span>
+          <input
+            type="text"
+            id="commandsSearch"
+            class="book-search-input"
+            placeholder="search a command, alias or category…"
+            autocomplete="off"
+            spellcheck="false"
+          />
+          <span class="book-search-count" id="commandsCount"></span>
+        </div>
 
-      <p><strong>Storage:</strong> Data is stored securely and only as long as needed.</p>
-
-      <p><strong>User Rights:</strong> You may request data deletion by contacting the developer or support server.</p>
-
-      <p><strong>Changes:</strong> This policy may be updated at any time without prior notice.</p>
+        <div class="book-list" id="commandsList"></div>
+      </div>
     </div>
-  </section>
+  </div>
 
-</div>
+  <!-- ░░ TERMS & PRIVACY MODAL ░░ -->
+  <div class="modal-overlay" id="termsModal" role="dialog" aria-modal="true" aria-label="Terms of service and privacy policy">
+    <div class="modal-box book-modal-box">
+      <button class="modal-close" id="closeTerms" aria-label="Close terms and privacy">✕</button>
 
-<footer>
-  © skye • All Rights Reserved
-</footer>
+      <div class="book-modal-card skye-legal-card">
+        <div class="book-modal-label">// legal</div>
+        <h2 class="book-modal-title">Terms &amp; Privacy Policy</h2>
+        <p class="book-modal-sub">Last updated July 2026. By inviting or using Skye in a server, you agree to the terms below.</p>
 
+        <div class="skye-legal-scroll">
+
+          <section class="skye-legal-section">
+            <h3>Terms of Service</h3>
+            <p>Skye is a hobby project, provided free of charge and with no strings attached. By adding Skye to your server or using its commands, you agree to the following:</p>
+            <ul>
+              <li>You must follow Discord's own Terms of Service and Community Guidelines while using Skye.</li>
+              <li>Don't use Skye to harass, spam, exploit bugs, or otherwise abuse its commands or your server members.</li>
+              <li>Skye's economy (balances, XP, gambling games, etc.) is entirely virtual. It has no real-world value and can never be exchanged for real money or goods.</li>
+              <li>Skye is actively in development and does not have reliable hosting yet. Uptime is low, features may change, and data may occasionally be reset without notice.</li>
+              <li>The developer may remove Skye from any server, or disable a feature entirely, at their discretion — most often in response to abuse.</li>
+              <li>Skye is provided "as is," without warranties of any kind. The developer isn't liable for any damages, losses, or issues arising from Skye's use or downtime.</li>
+              <li>These terms may be updated at any time as Skye develops further; continued use after a change means you accept the update.</li>
+            </ul>
+          </section>
+
+          <section class="skye-legal-section">
+            <h3>Privacy Policy</h3>
+            <p><b>What's collected.</b> Skye stores only what it needs to run its features: Discord user, server and channel IDs, and — only for specific commands — small bits of content such as AFK messages, warning reasons, poll options, reminder text, anonymous confessions, or recently deleted messages used for <code>.snipe</code>.</p>
+            <p><b>How it's used.</b> This data powers the feature you triggered — economy balances and leaderboards, XP and levels, reminders, warnings, AFK status, and the snipe cache. It is never sold, and it isn't shared with anyone for advertising or marketing.</p>
+            <p><b>Third-party lookups.</b> Commands like <code>.translate</code>, <code>.weather</code> and <code>.define</code> send your query text to the relevant external API purely to fetch a result. Those requests are subject to that service's own privacy policy.</p>
+            <p><b>Retention.</b> Temporary data (like the snipe cache) is cleared regularly or on restart. Persistent data (balances, XP, warnings, reminders) is kept until it's removed by a server admin, the affected user, or the developer.</p>
+            <p><b>Your choices.</b> Server admins and users can request their data be deleted at any time by reaching out through <code>.bugreport</code> or opening an issue on GitHub.</p>
+            <p><b>Kids.</b> Skye isn't directed at children under 13 (or Discord's own minimum age, whichever is higher), and doesn't knowingly collect anything beyond what Discord itself already provides.</p>
+            <p><b>Questions.</b> For anything not covered here, message the developer through <code>.bugreport</code> or open an issue on the project's GitHub page.</p>
+          </section>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ░░ THEME TOGGLE ░░ -->
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle light / dark mode">
+    <span class="theme-icon theme-icon-moon">🌙</span>
+    <span class="theme-icon theme-icon-sun">☀️</span>
+  </button>
+
+  <script src="script.js?v=2"></script>
 </body>
 </html>
