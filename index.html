@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skye — Discord Bot</title>
+  <meta name="description" content="Skye Discord bot: 319 command entries, complete prefix and slash documentation, setup guides, terms and privacy." />
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=3" />
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('jdkcube-theme');
+        if (saved === 'light') document.documentElement.setAttribute('data-theme', 'light');
+      } catch (_) { /* Storage can be disabled; the default theme still works. */ }
+    })();
+  </script>
+</head>
+<body class="dashboard-body skye-body">
+
+  <div class="dash-bg-grid"></div>
+  <div class="dash-glow"></div>
+
+  <main class="dashboard skye-dashboard">
+
+    <a class="skye-back" href="https://judokacube.github.io">← main site</a>
+
+    <header class="dash-hero fade-in">
+      <span class="dash-eyebrow">discord bot</span>
+      <h1 class="dash-title">Skye</h1>
+      <p class="dash-desc">python · discord.py · 319 command entries · prefix + slash</p>
+    </header>
+
+    <div class="skye-tile-grid">
+
+      <!-- COMMAND LIST TILE -->
+      <!-- BOT MINI PROFILE TILE -->
+      <section class="tile skye-tile-profile" aria-label="Skye bot profile">
+        <div class="tile-spotlight" aria-hidden="true"></div>
+
+        <div class="skye-profile-banner"></div>
+
+        <div class="skye-profile-avatar-row">
+          <div class="skye-profile-avatar-wrap">
+            <div class="skye-profile-avatar">
+              <img src="assets/skyepfp.jpeg" alt="Skye avatar" class="skye-profile-avatar-img" />
+            </div>
+            <span class="skye-profile-status" title="Availability varies — this is not a live status indicator"></span>
+          </div>
+        </div>
+
+        <div class="skye-profile-body">
+          <div class="skye-profile-names">
+            <span class="skye-profile-name">Skye</span>
+            <span class="skye-profile-tag">BOT</span>
+          </div>
+          <p class="skye-profile-bio">a multi-purpose discord utility bot — moderation, economy, fun, tools and more, all in one.</p>
+          <div class="skye-profile-chips">
+            <span class="skye-profile-chip">🛡️ moderation</span>
+            <span class="skye-profile-chip">💰 economy</span>
+            <span class="skye-profile-chip">🎮 fun</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- COMMAND LIST TILE -->
+      <button class="tile skye-tile-commands" id="openCommands" aria-haspopup="dialog">
+        <div class="tile-spotlight" aria-hidden="true"></div>
+        <div class="skye-commands-icon">📜</div>
+        <div class="skye-commands-text">
+          <h3 class="skye-commands-title">Command List</h3>
+          <p class="skye-commands-desc">syntax, slash paths, permissions, examples and safety limits for every command</p>
+          <span class="skye-commands-badge">prefix: <code>.</code> · slash commands</span>
+        </div>
+        <span class="tile-launch-arrow skye-commands-arrow">↗</span>
+      </button>
+
+      <!-- INVITE TILE -->
+      <section class="tile skye-tile-invite" aria-label="Invite Skye to your server">
+        <div class="tile-spotlight" aria-hidden="true"></div>
+
+        <div class="tile-head">
+          <span class="tile-label">// invite</span>
+        </div>
+
+        <p class="skye-invite-text">add Skye to your server for free. Review the requested permissions; Administrator is not requested.</p>
+
+        <a
+          class="skye-invite-btn"
+          href="https://discord.com/oauth2/authorize?client_id=1513500353658617926&permissions=1099867221206&integration_type=0&scope=bot+applications.commands"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span>Add to Discord</span>
+          <span class="skye-invite-btn-arrow">↗</span>
+        </a>
+
+        <div class="skye-disclaimer">
+          Skye is in active development. <b>Availability is not guaranteed</b>; reminders and automated actions can be delayed by downtime. <a href="https://discord.gg/9nbMfAznsJ" target="_blank" rel="noopener noreferrer">Join support ↗</a>
+        </div>
+      </section>
+
+      <!-- TERMS & PRIVACY TILE -->
+      <button class="tile skye-tile-terms" id="openTerms" aria-haspopup="dialog">
+        <div class="tile-spotlight" aria-hidden="true"></div>
+        <div class="skye-commands-icon">📄</div>
+        <div class="skye-commands-text">
+          <h3 class="skye-commands-title">Terms &amp; Privacy</h3>
+          <p class="skye-commands-desc">terms of service and privacy policy for using Skye</p>
+          <span class="skye-commands-badge">legal</span>
+        </div>
+        <span class="tile-launch-arrow skye-commands-arrow">↗</span>
+      </button>
+
+    </div>
+  </main>
+
+  <!-- ░░ COMMANDS MODAL ░░ -->
+  <div class="modal-overlay" id="commandsModal" aria-hidden="true" inert role="dialog" aria-modal="true" aria-labelledby="commandsTitle">
+    <div class="modal-box book-modal-box">
+      <button class="modal-close" id="closeCommands" aria-label="Close command list">✕</button>
+
+      <div class="book-modal-card">
+        <div class="book-modal-label">// skye commands</div>
+        <h2 class="book-modal-title" id="commandsTitle">Skye Command Reference</h2>
+        <p class="book-modal-sub">319 command entries, including group overviews and the operator-only shutdown command. Default prefix: <code>.</code>. Updated 3 October 2026.</p>
+
+        <div class="book-search-row">
+          <span class="book-search-icon">🔍</span>
+          <input
+            type="text"
+            id="commandsSearch"
+            class="book-search-input"
+            placeholder="search names, slash paths, permissions…"
+            aria-label="Search the command reference"
+            autocomplete="off"
+            spellcheck="false"
+          />
+          <span class="book-search-count" id="commandsCount" role="status" aria-live="polite" aria-atomic="true"></span>
+        </div>
+
+        <div class="docs-filter-row">
+          <div class="docs-filter-field"><label for="commandsCategory">Category</label>
+          <select id="commandsCategory"><option value="">All categories</option></select></div>
+          <div class="docs-filter-field"><label for="commandsSort">Sort by</label>
+          <select id="commandsSort">
+            <option value="name">Name: A–Z</option>
+            <option value="name-desc">Name: Z–A</option>
+            <option value="category">Category, then name</option>
+            <option value="access">Access requirements</option>
+            <option value="arguments">Fewest required arguments</option>
+          </select></div>
+          <button type="button" id="commandsClear" class="docs-small-button">Clear</button>
+        </div>
+        <div class="book-list" id="commandsList" aria-label="Command results"></div>
+        <nav class="docs-nav" aria-label="Documentation links"><a href="#guide">Getting started</a><a href="https://discord.gg/9nbMfAznsJ" target="_blank" rel="noopener noreferrer">Support ↗</a></nav>
+      </div>
+    </div>
+  </div>
+
+  <!-- ░░ TERMS & PRIVACY MODAL ░░ -->
+  <div class="modal-overlay" id="termsModal" aria-hidden="true" inert role="dialog" aria-modal="true" aria-labelledby="termsTitle">
+    <div class="modal-box book-modal-box">
+      <button class="modal-close" id="closeTerms" aria-label="Close terms and privacy">✕</button>
+
+      <div class="book-modal-card skye-legal-card">
+        <div class="book-modal-label">// legal</div>
+        <h2 class="book-modal-title" id="termsTitle" tabindex="-1">Terms &amp; Privacy Policy</h2>
+        <p class="book-modal-sub">Updated 3 October 2026. Operated by judokacube. Privacy requests: join support and open a ticket.</p>
+        <nav class="docs-nav" aria-label="Policy sections"><a href="#terms">Terms of Service</a><a href="#privacy">Privacy Policy</a><a href="policies.html">Open full page ↗</a></nav>
+        <div class="skye-legal-scroll">
+<section class="skye-legal-section" id="termsContent" tabindex="-1">
+  <h3>Terms of Service</h3>
+  <p><b>Effective and last updated: 3 October 2026.</b> These terms cover Skye, the Discord bot operated by judokacube, and this documentation website. Skye is an independent community project, not a Discord product or an emergency service.</p>
+  <h4>1. Using Skye</h4>
+  <p>By adding Skye to a server or using its features, you agree to these terms. If you do not agree, stop using the bot and, if you administer the server, remove it. The privacy policy below explains data handling; accepting these terms does not replace any consent required by law.</p>
+  <p>You must meet Discord’s minimum age requirement, including any higher minimum in your country, and follow <a href="https://discord.com/terms" target="_blank" rel="noopener noreferrer">Discord’s Terms of Service</a> and <a href="https://discord.com/guidelines" target="_blank" rel="noopener noreferrer">Community Guidelines</a>. If local law requires a parent or guardian’s permission, obtain it before using Skye.</p>
+  <h4>2. Server administration and permissions</h4>
+  <p>Only install or configure Skye where you are authorized to do so. Server administrators choose enabled modules, channels, roles and moderation rules, and are responsible for informing members about relevant features. Grant only the permissions needed for the features you use. The invite does not request Administrator; additional capabilities may require specific permissions or Discord server features.</p>
+  <p>Check targets, settings and confirmation prompts before taking action. Deleting messages, channels, roles or webhooks can be irreversible. Moderation and anti-abuse tools depend on Discord permissions, role order, configuration and availability. They do not guarantee prevention of raids, unauthorized changes, lost data or false positives, and they are not a backup service.</p>
+  <h4>3. Acceptable use</h4>
+  <ul>
+    <li>Do not use Skye for harassment, spam, discrimination, doxxing, impersonation, illegal activity or unauthorized access.</li>
+    <li>Do not exploit vulnerabilities, bypass permissions or rate limits, manipulate virtual balances through abuse, or deliberately disrupt the bot or other servers.</li>
+    <li>Do not submit passwords, access tokens, financial details, health information or other sensitive personal information through commands, confessions or third-party lookups.</li>
+    <li>Only submit text, images and other material you are entitled to use. Respect other people’s privacy and intellectual property.</li>
+    <li>Report suspected vulnerabilities privately by <a href="https://discord.gg/9nbMfAznsJ" target="_blank" rel="noopener noreferrer">joining support and opening a ticket</a>. Do not test destructive behaviour on servers without permission or post secrets in public reports.</li>
+  </ul>
+  <h4>4. Community content and virtual games</h4>
+  <p>You retain your rights in submitted content. You allow Skye to process and display it as needed for the feature you request—for example, posting an announcement, translating text, delivering a reminder or forwarding a bug report. You are responsible for your submissions.</p>
+  <p>Confessions are anonymous to ordinary readers, not to the operator: author IDs are retained for abuse investigations. Prefix command text may be visible before a deletion completes. Do not use confessions as a secure or confidential reporting channel.</p>
+  <p>Coins, XP and casino-style games are entertainment only. Virtual balances are server-specific, have no cash value, and cannot be purchased, redeemed or exchanged for money or goods through Skye. Skye does not accept real-money wagers. Do not use its virtual games to facilitate real-money gambling.</p>
+  <p>Giveaway hosts are responsible for eligibility, prizes, lawful operation and prize delivery. Skye only manages entries and winner selection; it does not sponsor or guarantee a giveaway.</p>
+  <h4>5. Availability, changes and suspension</h4>
+  <p>Skye is provided free of charge and is under active development. There is no uptime or support-response guarantee. Maintenance, errors, hosting interruptions, Discord changes and third-party outages may delay commands, reminders or temporary moderation expiry. Features and limits may change or be discontinued.</p>
+  <p>We may restrict access, disable features or remove Skye from a server to address abuse, security, legal requirements or operational needs. We will provide notice where practical, but urgent protective action may occur first. Stored data may be lost through failures; do not rely on Skye as your only record.</p>
+  <h4>6. Responsibility and your legal rights</h4>
+  <p>To the extent permitted by applicable law, Skye is provided as available, without a promise that it will be uninterrupted, error-free or suitable for a particular purpose. To that same extent, the operator is not responsible for indirect or consequential loss arising from use, downtime or third-party failures.</p>
+  <p>Nothing in these terms excludes or limits rights, warranties or liability that cannot lawfully be excluded or limited, including applicable consumer rights. Server administrators and Discord retain their own responsibilities; these terms do not replace their rules.</p>
+  <h4>7. Changes and contact</h4>
+  <p>Updates will be posted here with a revised date. Material changes will be announced through support where practical, and any notice or consent required by applicable law will be respected. If you no longer agree, stop using Skye. Questions, abuse reports and disputes should be raised by <a href="https://discord.gg/9nbMfAznsJ" target="_blank" rel="noopener noreferrer">joining the support server and opening a ticket</a> for judokacube.</p>
+</section>
+<section class="skye-legal-section" id="privacyContent" tabindex="-1">
+  <h3>Privacy Policy</h3>
+  <p><b>Effective and last updated: 3 October 2026.</b> This policy covers data handled by the Skye bot and this website. The operator is judokacube. For privacy questions, access, correction or deletion requests, <a href="https://discord.gg/9nbMfAznsJ" target="_blank" rel="noopener noreferrer">join the support server and open a ticket</a>. Do not post personal information in a public support channel.</p>
+  <h4>1. What the bot receives</h4>
+  <p>Discord supplies information the bot is allowed to access: user, server, channel, message and role IDs; usernames and display names; avatars; membership and role information; command arguments and interactions; messages in accessible channels; and relevant server events. Presence data is available only when the operator enables Discord’s presence intent. The bot does not record voice audio.</p>
+  <p>Receiving an event does not mean all of its contents are permanently stored. Message content is processed to run commands and configured features such as filtering, counting, automatic responses, XP and AFK notices. The Discord client also maintains temporary in-memory caches. Skye cannot read arbitrary private conversations between other users.</p>
+  <h4>2. Data stored for features</h4>
+  <ul>
+    <li><b>Configuration and access:</b> server preferences, enabled modules, channel and role IDs, panel text, custom aliases/responses, security rules, exemptions, and saved permission states.</li>
+    <li><b>Tickets and voice rooms:</b> channel IDs, owner IDs, ticket panel/support-role references, temporary-room ownership and configuration. Ticket conversation content stays in Discord; Skye does not create a separate transcript archive.</li>
+    <li><b>Moderation and membership:</b> warnings with reasons, moderator IDs and timestamps; temporary-ban expiry records; moderation counters; and join, leave, nickname and role-change history. Membership history is recorded independently of whether optional event logging is enabled.</li>
+    <li><b>Community activity:</b> balances, reward cooldowns, XP, reminder text and due times, AFK reasons/timestamps, giveaway entries and winners, counting state, bump-reminder state, and booster-role ownership/sharing.</li>
+    <li><b>Confessions:</b> author ID, confession number and posted message ID for abuse investigation. The posted confession itself remains in Discord. The local record is not a promise of anonymity from the operator.</li>
+    <li><b>Bug reports:</b> report text, reporter ID, server context, report ID and timestamp. Reports may be forwarded to the operator’s Discord messages and a configured report channel, including channel context.</li>
+    <li><b>Deleted messages:</b> the snipe feature temporarily retains author information, a bounded content excerpt, deletion time and an attachment URL when present. Command messages are excluded from this cache.</li>
+  </ul>
+  <h4>3. Why data is used and who can see it</h4>
+  <p>Data is used to deliver requested or administrator-configured features, enforce permissions, operate moderation and anti-abuse controls, investigate reports, and maintain the service. We do not sell or license Discord user data, use it for advertising, or use message content to train AI models.</p>
+  <p>Command responses and feature output are often visible in their Discord channel. Examples include leaderboards, AFK notices, reminders and polls. Ticket participants, support staff and administrators may see ticket content. Authorized moderators can retrieve recent snipes or membership history. Event logging can send metadata and moderation/security information to configured channels; message edit/delete logs do not copy message bodies, and command messages are excluded.</p>
+  <p>The operator can access locally stored data and reports for operation and support. Discord processes bot interactions, messages and attachments under <a href="https://discord.com/privacy" target="_blank" rel="noopener noreferrer">its privacy policy</a>. Information may also be disclosed where required by law or necessary to address abuse, security incidents or the protection of legal rights.</p>
+  <p>Where data-protection law requires a legal basis, processing requested features is used to provide the service, and proportionate security, abuse prevention and support processing is based on legitimate interests. Legal obligations or consent may apply in specific circumstances. You may ask the operator about the basis relevant to your situation and exercise applicable rights below.</p>
+  <h4>4. Third-party requests</h4>
+  <ul>
+    <li><b>Translation:</b> text and language choices are sent to <a href="https://mymemory.translated.net/doc/usagelimits.php" target="_blank" rel="noopener noreferrer">MyMemory / Translated</a>. An operator-configured contact email may accompany requests. Do not translate confidential or sensitive text.</li>
+    <li><b>Weather:</b> a location query is sent to <a href="https://open-meteo.com/en/terms" target="_blank" rel="noopener noreferrer">Open-Meteo</a> for geocoding, followed by a weather request for the resulting coordinates.</li>
+    <li><b>Definitions:</b> the requested word is sent to <a href="https://dictionaryapi.dev/" target="_blank" rel="noopener noreferrer">Free Dictionary API</a>.</li>
+    <li><b>Reaction images:</b> an action category is requested from <a href="https://nekos.best/" target="_blank" rel="noopener noreferrer">nekos.best</a>; the lookup does not require sending the mentioned member’s ID. Discord may load the returned media.</li>
+    <li><b>Images:</b> uploaded images and supported Discord CDN links are downloaded and validated for the requested profile or server customization, then sent to Discord.</li>
+  </ul>
+  <p>These providers receive the request data and network metadata such as the bot host’s IP address. Their handling is governed by their own policies. Skye’s deletion of local data does not automatically delete information already processed by Discord or an external provider. Services may process data outside your country; their policies describe their arrangements.</p>
+  <h4>5. Retention and deletion</h4>
+  <p><b>Temporary memory:</b> snipe records are limited to 10 per channel, expire after one hour and are periodically removed; a bot restart clears them. Authorized moderators can clear a channel’s snipe cache. Short-lived game and rate-limit state expires, is pruned or is cleared on restart.</p>
+  <p><b>Bounded records:</b> the local database retains up to 100 bug reports and 200 confession-author mappings per server, and up to 25 membership-history events per user across at most 1,000 stored users per server. These are count limits, not guaranteed time-based deletion periods.</p>
+  <p><b>Persistent records:</b> configuration, balances, XP, warnings, ownership and similar state remain until the relevant feature removes or replaces them, an authorized user/admin uses an available removal command, or the operator handles a request. Reminders are removed after delivery/cancellation, or after their delivery-retry period expires. There is no universal automatic deletion period. Disabling a module or removing Skye from a server does not automatically erase its saved database records.</p>
+  <p><b>Discord copies:</b> bot responses, log messages, confession posts, reports and support tickets remain in Discord until deleted there under the relevant permissions and Discord’s handling. Clearing a local record does not erase screenshots, third-party copies or messages already posted. Diagnostic logs and any recovery copies are separate from feature records; ask support to include relevant operator-controlled copies in your request. We do not promise a backup-retention period that has not been established.</p>
+  <h4>6. Your choices and requests</h4>
+  <p>Use available feature controls to cancel reminders, remove your AFK status or stop participating. Server administrators can disable optional modules and remove the bot’s permissions or installation. For broader requests, <a href="https://discord.gg/9nbMfAznsJ" target="_blank" rel="noopener noreferrer">join support and make a ticket</a>.</p>
+  <p>In the ticket, say whether you want access, correction or deletion, provide your Discord user ID and relevant server ID(s), and describe the records involved. We may ask you to verify control of the account or your authority over server configuration. Never provide your password, bot token or account token. We will assess the request and respond without undue delay and within applicable legal deadlines; limited retention may be necessary for legal obligations, security or unresolved abuse reports, and we will explain any restriction.</p>
+  <p>Depending on applicable law, you may also have rights to portability, restriction, objection, withdrawal of consent where consent is used, and a complaint to your local data-protection authority. These rights are not all absolute. Server moderation disputes should also be raised with that server’s administrators; only the operator can address Skye’s separate local records.</p>
+  <h4>7. Website, security and children</h4>
+  <p>This website does not include advertising or analytics scripts. It stores your light/dark theme preference in your browser until you clear site data. Search and category filtering run in your browser and are not sent to the bot. The website host may process access/security logs, including IP addresses and request metadata. Google Fonts is loaded from Google, which receives the browser request; see <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google’s privacy policy</a>. Following an external link subjects that visit to the destination’s policies.</p>
+  <p>Skye uses permission checks, bounded processing and restricted local file access to reduce risk. These measures do not guarantee absolute security or confidentiality; no claim of end-to-end encryption is made for bot data. Report suspected exposure privately through a support ticket.</p>
+  <p>Skye is not intended for anyone below Discord’s minimum age or a higher applicable local minimum. If you believe ineligible child data has been provided, contact support so it can be investigated and appropriately removed. Do not submit sensitive child information in a public channel.</p>
+  <h4>8. Policy changes</h4>
+  <p>Changes will be posted with an updated date. Material changes will be announced through support where practical; additional notice or consent will be provided when required. For questions about these terms or this policy, contact judokacube by joining support and opening a ticket.</p>
+</section>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <noscript><style>html, body.dashboard-body { height:auto; overflow:auto; }</style><p class="docs-noscript">Enable JavaScript to browse the command documentation on this page. The <a href="policies.html">Terms and Privacy Policy</a> are available without JavaScript.</p></noscript>
+  <!-- ░░ THEME TOGGLE ░░ -->
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle light / dark mode">
+    <span class="theme-icon theme-icon-moon">🌙</span>
+    <span class="theme-icon theme-icon-sun">☀️</span>
+  </button>
+
+  <script src="commands-data.js?v=3"></script>
+  <script src="script.js?v=3"></script>
+</body>
+</html>
