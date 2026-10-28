@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skye — Discord Bot</title>
+  <meta name="description" content="Skye Discord bot: 364 commands and subcommands, complete prefix and slash documentation, setup guides, terms and privacy." />
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=5" />
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('jdkcube-theme');
+        if (saved === 'light') document.documentElement.setAttribute('data-theme', 'light');
+      } catch (_) { /* Storage can be disabled; the default theme still works. */ }
+    })();
+  </script>
+</head>
+<body class="dashboard-body skye-body">
+
+  <div class="dash-bg-grid"></div>
+  <div class="dash-glow"></div>
+
+  <main class="dashboard skye-dashboard">
+
+    <a class="skye-back" href="https://judokacube.github.io">← main site</a>
+
+    <header class="dash-hero fade-in">
+      <span class="dash-eyebrow">discord bot</span>
+      <h1 class="dash-title">Skye</h1>
+      <p class="dash-desc">python · discord.py · 364 commands and subcommands · prefix + slash</p>
+    </header>
+
+    <div class="skye-tile-grid">
+
+      <!-- COMMAND LIST TILE -->
+      <!-- BOT MINI PROFILE TILE -->
+      <section class="tile skye-tile-profile" aria-label="Skye bot profile">
+        <div class="tile-spotlight" aria-hidden="true"></div>
+
+        <div class="skye-profile-banner"></div>
+
+        <div class="skye-profile-avatar-row">
+          <div class="skye-profile-avatar-wrap">
+            <div class="skye-profile-avatar">
+              <img src="assets/skyepfp.jpeg" alt="Skye avatar" class="skye-profile-avatar-img" />
+            </div>
+            <span class="skye-profile-status" title="Availability varies — this is not a live status indicator"></span>
+          </div>
+        </div>
+
+        <div class="skye-profile-body">
+          <div class="skye-profile-names">
+            <span class="skye-profile-name">Skye</span>
+            <span class="skye-profile-tag">BOT</span>
+          </div>
+          <p class="skye-profile-bio">a multi-purpose discord utility bot — moderation, economy, fun, tools and more, all in one.</p>
+          <div class="skye-profile-chips">
+            <span class="skye-profile-chip">🛡️ moderation</span>
+            <span class="skye-profile-chip">💰 economy</span>
+            <span class="skye-profile-chip">🎮 fun</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- COMMAND LIST TILE -->
+      <a class="tile skye-tile-commands" href="docs.html">
+        <div class="tile-spotlight" aria-hidden="true"></div>
+        <div class="skye-commands-icon">📜</div>
+        <div class="skye-commands-text">
+          <h3 class="skye-commands-title">Docs</h3>
+          <p class="skye-commands-desc">setup guides, command usage, permissions, examples and troubleshooting</p>
+          <span class="skye-commands-badge">prefix: <code>.</code> · slash commands</span>
+        </div>
+        <span class="tile-launch-arrow skye-commands-arrow">↗</span>
+      </a>
+
+      <!-- INVITE TILE -->
+      <section class="tile skye-tile-invite" aria-label="Invite Skye to your server">
+        <div class="tile-spotlight" aria-hidden="true"></div>
+
+        <div class="tile-head">
+          <span class="tile-label">// invite</span>
+        </div>
+
+        <p class="skye-invite-text">add Skye to your server for free. Review the requested permissions; Administrator is not requested.</p>
+
+        <a
+          class="skye-invite-btn"
+          href="https://discord.com/oauth2/authorize?client_id=1513500353658617926&permissions=1099867221206&integration_type=0&scope=bot+applications.commands"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span>Add to Discord</span>
+          <span class="skye-invite-btn-arrow">↗</span>
+        </a>
+
+        <div class="skye-disclaimer">
+          Skye is in active development. <b>Availability is not guaranteed</b>; reminders and automated actions can be delayed by downtime. <a href="https://discord.gg/R38JMtnBVx" target="_blank" rel="noopener noreferrer">Join support ↗</a>
+        </div>
+      </section>
+
+      <!-- TERMS & PRIVACY TILE -->
+      <a class="tile skye-tile-terms" href="policies.html">
+        <div class="tile-spotlight" aria-hidden="true"></div>
+        <div class="skye-commands-icon">📄</div>
+        <div class="skye-commands-text">
+          <h3 class="skye-commands-title">Policies</h3>
+          <p class="skye-commands-desc">read the full terms of service and privacy policy</p>
+          <span class="skye-commands-badge">legal</span>
+        </div>
+        <span class="tile-launch-arrow skye-commands-arrow">↗</span>
+      </a>
+
+    </div>
+  </main>
+
+  <!-- ░░ THEME TOGGLE ░░ -->
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle light / dark mode">
+    <span class="theme-icon theme-icon-moon">🌙</span>
+    <span class="theme-icon theme-icon-sun">☀️</span>
+  </button>
+
+  <script src="script.js?v=4"></script>
+</body>
+</html>

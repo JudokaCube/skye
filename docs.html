@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" class="skye-document-root">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Docs — Skye</title>
+  <meta name="description" content="Skye documentation: setup guides, all commands, permissions, examples and troubleshooting." />
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=5" />
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('jdkcube-theme');
+        if (saved === 'light') document.documentElement.setAttribute('data-theme', 'light');
+      } catch (_) { /* Storage can be disabled; the default theme still works. */ }
+    })();
+  </script>
+</head>
+<body class="dashboard-body skye-body skye-document-page"><div class="dash-bg-grid" aria-hidden="true"></div><div class="dash-glow" aria-hidden="true"></div><main class="skye-document skye-docs-document"><nav class="docs-nav page-navigation" aria-label="Site navigation"><a href="index.html">Home</a><a href="docs.html" aria-current="page">Docs</a><a href="policies.html">Policies</a><a href="https://discord.gg/R38JMtnBVx" target="_blank" rel="noopener noreferrer">Support ↗</a></nav><header class="dash-hero"><span class="dash-eyebrow">// skye</span><h1 class="dash-title">Docs</h1><p class="dash-desc">Setup, commands and practical guidance. Updated 28 October 2026.</p></header><nav class="docs-nav" aria-label="On this page"><a href="#guide">Getting started</a><a href="#setup">Feature setup</a><a href="#moderation">Moderation &amp; security</a><a href="#commands">Commands</a></nav>
+    <section class="docs-guide" id="guide">
+      <h2>Getting started</h2>
+      <div class="docs-guide-body">
+        <h3>Read the syntax</h3>
+        <p><code>&lt;value&gt;</code> is required; <code>[value]</code> is optional and may show a default. Don’t type the brackets. Replace example mentions and IDs with real targets. Quote multiword positional arguments; trailing text can contain spaces.</p>
+        <p>The default prefix is <code>.</code>; administrators can change it. Slash commands use the exact path on each card, with Discord’s named option fields. Aliases apply to prefix commands. A group’s bare prefix command usually becomes its slash <code>overview</code> action—for example <code>.ticket</code> → <code>/ticket overview</code>. For durations, a bare number means minutes; use <code>s</code>, <code>m</code>, <code>h</code> or <code>d</code> for an explicit unit.</p>
+        <h3>Set up your server</h3>
+        <ol>
+          <li>Skye only remains in owner-authorized servers. Request authorization through support, then invite Skye and review individual permissions and ensure it can view/send in the channels you use. Administrator is not requested.</li>
+          <li>Put Skye’s role above the roles/members it must manage. You also need the required permissions and role position; Skye does not lend you its privileges.</li>
+          <li>Use <code>.features</code> to inspect optional modules. Economy, leveling, giveaways, server options, games, bump reminders, counting, confessions, anti-nuke, anti-raid, logging and VoiceMaster start disabled. Some need setup before <code>.features enable &lt;name&gt;</code>.</li>
+          <li>Open <code>/setup overview</code> for private guided setup, or <code>.serversetup</code> in a staff-only text channel. Reopen it to resume saved progress. Use <code>.help</code>, <code>.commandinfo &lt;name&gt;</code> or the cards below for the command you need. Buttons, confirmations and modals are part of the feature, not separate text commands.</li>
+        </ol>
+        <h3>Common setup sequences</h3>
+        <ul>
+          <li><b>Tickets:</b> <code>.ticket setup main</code> → select category/support role → <code>.ticket panel main #support</code>.</li>
+          <li><b>Voice rooms:</b> <code>.voicemaster setup</code> → use the generated join-to-create lobby and control panel.</li>
+          <li><b>Economy / XP:</b> <code>.economy enable</code>; <code>.features enable leveling</code> → <code>.levelconfig</code>.</li>
+          <li><b>Role automation:</b> <code>.features enable server_options</code> → configure <code>.serverconfig</code>, <code>.buttonrole</code> or <code>.reactionrole</code>. Cosmetic roles cannot grant private access or moderation authority.</li>
+          <li><b>Security:</b> the server owner runs <code>.antinuke setup #staff-log</code>, reviews <code>.antinuke rules</code> and chooses responses. <code>.antiraid setup #staff-log</code> has separate thresholds. Review actions before enabling them.</li>
+          <li><b>Filtering:</b> <code>.filter add blocked phrase</code> or <code>.filter spam enable</code> → <code>.filter enable</code>. Filtering is configured separately from the optional-module list.</li>
+          <li><b>Community:</b> <code>.confessions setup #confessions</code>, <code>.counting setup #counting</code>, or <code>.bumpreminder setup #bump</code>.</li>
+          <li><b>Logging:</b> <code>.logs setup #staff-log</code> → <code>.logs event messages on</code> if needed. Message events record metadata, not bodies.</li>
+        </ul>
+        <h3>Before destructive or private actions</h3>
+        <p>Read confirmation prompts. Cleanup is bounded and rechecks permissions, but deletions can be irreversible. Anti-nuke is reactive and is not a backup. Old ticket channels without ownership records need manual administrator closure.</p>
+        <p>Sensitive moderation responses use private delivery; use slash commands for private interaction menus. Confessions are anonymous to readers, not the operator. Use slash commands for ephemeral confession/bug-report acknowledgements, and a support ticket for sensitive requests. Never submit credentials. Message lookup and pins must run in the source channel.</p>
+        <h3>If a command does not work</h3>
+        <p>Check the server’s prefix, module setup, your permissions, Skye’s permissions and role order, then the cooldown. Timed-out members and members who cannot send in the channel cannot use Skye to bypass that restriction. Slash visibility can also be restricted in Discord’s Integrations settings. Missing presence data, unsupported server image/colour features and downtime may limit results.</p>
+        <p>Use <code>.bugreport</code> for reproducible non-sensitive bugs. For privacy, deletion or security concerns, <a href="https://discord.gg/R38JMtnBVx" target="_blank" rel="noopener noreferrer">join support and open a ticket</a>. Skye has no public nuke/reset-channel command.</p>
+      </div>
+    </section><section class="docs-guide" id="setup"><h2>Core feature setup</h2><div class="docs-guide-body">
+<h3>Guided setup</h3><p>Use <code>/setup overview</code> or <code>.serversetup</code> in a staff-only channel. Choose a section and setting, optionally pick channels or roles, then Configure. Each change saves independently. Finish shows saved settings; reopening resumes your last section. Administrator permission is required, and anti-nuke owner restrictions still apply.</p>
+<h3>Welcome, goodbye and boosts</h3><p>Use <code>.serverconfig welcome #welcome Welcome {mention}!</code>, <code>.serverconfig leave #goodbye {user} has left {server}.</code> and <code>.serverconfig boost #boosts Thank you {mention}!</code>. Inspect the shared placeholders with <code>.serverconfig placeholders</code>. Each message type has its own destination and disable command.</p>
+<h3>Invite tracking</h3><p>Tracking starts off. An authorized manager can use <code>.invitetrack enable</code> and configure the fake-invite threshold. Members can view <code>.invites @user</code>. Attribution can be unknown when Discord does not provide enough evidence; vanity URLs cannot always identify an inviter.</p>
+<h3>Logging and tickets</h3><p>Use <code>.logs setup #staff-log</code>, then configure individual categories with <code>.logs channel</code> and <code>.logs event</code>. Use <code>.ticket setup main</code> to select a category, support role and destination, then <code>.ticket panel main #support</code> to publish the panel.</p>
+</div></section>
+<section class="docs-guide" id="moderation"><h2>Moderation and server protection</h2><div class="docs-guide-body">
+<h3>Targets, reasons and cases</h3><p>User, role and channel arguments accept IDs alongside supported mentions and names. IDs never bypass permissions or role hierarchy. Reasons must be 1–400 characters without control characters. Durations accept minutes or s/m/h/d combinations; timeouts are limited to 28 days. Recent completed moderation cases are available privately through <code>.memberhistory</code>.</p>
+<h3>Message cleanup</h3><p><code>.purge 50</code> opens a confirmation. Recent only uses bulk-eligible messages and skips older ones. Full cleanup still supports older messages, which Discord requires deleting individually. Progress and partial failures are reported; API retry delays cannot be bypassed.</p>
+<h3>Anti-nuke and anti-raid</h3><p>Both protections start disabled. Review <code>.antinuke rules</code> and <code>.antiraid</code> before enabling enforcement. Anti-nuke supports owner-approved escalation and fallback responses; anti-raid offers optional repeated joins, young-account bursts, newcomer spam detection, punishment budgets and temporary verification. Audit logs arrive after actions, and the bot cannot cross Discord role hierarchy or guarantee prevention.</p>
+<h3>AutoMod</h3><p>Add blocked terms with <code>.filter add</code>, configure the spam threshold with <code>.filter spam set</code>, choose the response, then enable the relevant filters. Exemptions and punishment cooldowns remain separate from deleting matching messages.</p>
+</div></section><section id="commands" class="docs-command-section"><h2>Commands</h2><p class="book-modal-sub">Browse all 364 registered commands and subcommands. Open an entry for syntax, aliases, arguments, examples and required permissions.</p><div class="book-search-row">
+          <span class="book-search-icon">🔍</span>
+          <input
+            type="text"
+            id="commandsSearch"
+            class="book-search-input"
+            placeholder="search names, slash paths, permissions…"
+            aria-label="Search documentation"
+            autocomplete="off"
+            spellcheck="false"
+          />
+          <span class="book-search-count" id="commandsCount" role="status" aria-live="polite" aria-atomic="true"></span>
+        </div>
+
+        <div class="docs-filter-row">
+          <div class="docs-filter-field"><label for="commandsCategory">Category</label>
+          <select id="commandsCategory"><option value="">All categories</option></select></div>
+          <div class="docs-filter-field"><label for="commandsSort">Sort by</label>
+          <select id="commandsSort">
+            <option value="name">Name: A–Z</option>
+            <option value="name-desc">Name: Z–A</option>
+            <option value="category" selected>Category, then name</option>
+            <option value="access">Access requirements</option>
+            <option value="arguments">Fewest required arguments</option>
+          </select></div>
+          <button type="button" id="commandsClear" class="docs-small-button">Clear</button>
+        </div>
+        <div class="book-list" id="commandsList" aria-label="Command results"></div></section><noscript><p class="docs-noscript">Command search requires JavaScript. Setup guides and policies are readable without it. Use .help &lt;command&gt; in Discord for detailed command information.</p></noscript></main>  <button class="theme-toggle" id="themeToggle" aria-label="Toggle light / dark mode">
+    <span class="theme-icon theme-icon-moon">🌙</span>
+    <span class="theme-icon theme-icon-sun">☀️</span>
+  </button>
+
+<script src="commands-data.js?v=4"></script><script src="script.js?v=4"></script></body></html>
