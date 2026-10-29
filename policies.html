@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=5" />
+  <link rel="stylesheet" href="style.css?v=6" />
   <script>
     (function () {
       try {
@@ -23,11 +23,11 @@
   <div class="dash-bg-grid" aria-hidden="true"></div><div class="dash-glow" aria-hidden="true"></div>
   <main class="skye-document">
     <nav class="docs-nav page-navigation" aria-label="Site navigation"><a href="index.html">Home</a><a href="docs.html">Docs</a><a href="policies.html" aria-current="page">Policies</a><a href="https://discord.gg/R38JMtnBVx" target="_blank" rel="noopener noreferrer">Support ↗</a></nav>
-    <header class="dash-hero"><span class="dash-eyebrow">// legal</span><h1 class="dash-title">Policies</h1><p class="book-modal-sub">Updated 28 October 2026 · jdkcube</p></header>
+    <header class="dash-hero"><span class="dash-eyebrow">// legal</span><h1 class="dash-title">Policies</h1><p class="book-modal-sub">Updated 29 October 2026 · jdkcube</p></header>
     <nav class="docs-nav" aria-label="Policy sections"><a href="#termsContent">Terms</a><a href="#privacyContent">Privacy</a><a href="https://discord.gg/R38JMtnBVx" target="_blank" rel="noopener noreferrer">Support tickets ↗</a></nav>
 <section class="skye-legal-section" id="termsContent" tabindex="-1">
   <h3>Terms of Service</h3>
-  <p><b>Effective and last updated: 28 October 2026.</b> These terms cover Skye, the Discord bot operated by jdkcube, and this documentation website. Skye is an independent community project, not a Discord product or an emergency service.</p>
+  <p><b>Effective and last updated: 29 October 2026.</b> These terms cover Skye, the Discord bot operated by jdkcube, and this documentation website. Skye is an independent community project, not a Discord product or an emergency service.</p>
   <h4>1. Using Skye</h4>
   <p>By adding Skye to a server or using its features, you agree to these terms. If you do not agree, stop using the bot and, if you administer the server, remove it. The privacy policy below explains data handling; accepting these terms does not replace any consent required by law.</p>
   <p>You must meet Discord’s minimum age requirement, including any higher minimum in your country, and follow <a href="https://discord.com/terms" target="_blank" rel="noopener noreferrer">Discord’s Terms of Service</a> and <a href="https://discord.com/guidelines" target="_blank" rel="noopener noreferrer">Community Guidelines</a>. If local law requires a parent or guardian’s permission, obtain it before using Skye.</p>
@@ -36,6 +36,7 @@
   <p>Check targets, settings and confirmation prompts before taking action. Deleting messages, channels, roles or webhooks can be irreversible. Moderation and anti-abuse tools depend on Discord permissions, role order, configuration and availability. They do not guarantee prevention of raids, unauthorized changes, lost data or false positives, and they are not a backup service.</p>
   <p>Server admission is controlled by the bot owner’s whitelist. Server administrators cannot approve their own servers. In an unauthorized server, Skye attempts one explanatory notice, privately notifies its owner and leaves; reconnect checks also enforce this restriction.</p>
   <p>Review automated enforcement before enabling it. Scamcatcher warns members not to post in its configured trap channel and attempts to delete messages and kick eligible senders with the reason “compromised account”. An automated action is not proof of wrongdoing. Invite-tracking “fake” counts describe early departures, not verified malicious or alternate accounts. Server administrators should review disputes and incorrect enforcement.</p>
+  <p>Administrators are responsible for custom ticket prompts, links, images, support-role routing and who can access each ticket. Do not ask members to submit credentials or unnecessary sensitive information. Preview panels and verify access before publishing them.</p>
   <h4>3. Acceptable use</h4>
   <ul>
     <li>Do not use Skye for harassment, spam, discrimination, doxxing, impersonation, illegal activity or unauthorized access.</li>
@@ -63,7 +64,7 @@
 </section>
 <section class="skye-legal-section" id="privacyContent" tabindex="-1">
   <h3>Privacy Policy</h3>
-  <p><b>Effective and last updated: 28 October 2026.</b> This policy covers data handled by the Skye bot and this website. The operator is jdkcube. For privacy questions, access, correction or deletion requests, <a href="https://discord.gg/R38JMtnBVx" target="_blank" rel="noopener noreferrer">join the support server and open a ticket</a>. Do not post personal information in a public support channel.</p>
+  <p><b>Effective and last updated: 29 October 2026.</b> This policy covers data handled by the Skye bot and this website. The operator is jdkcube. For privacy questions, access, correction or deletion requests, <a href="https://discord.gg/R38JMtnBVx" target="_blank" rel="noopener noreferrer">join the support server and open a ticket</a>. Do not post personal information in a public support channel.</p>
   <h4>1. What the bot receives</h4>
   <p>Discord supplies information the bot is allowed to access: user, server, channel, message and role IDs; usernames and display names; avatars; membership and role information; command arguments and interactions; messages in accessible channels; and relevant server events. Presence data is available only when the operator enables Discord’s presence intent. The bot does not record voice audio.</p>
   <p>Receiving an event does not mean all of its contents are permanently stored. Message content is processed to run commands and configured features such as filtering, counting, automatic responses, XP and AFK notices. The Discord client also maintains temporary in-memory caches. Skye cannot read arbitrary private conversations between other users.</p>
@@ -80,6 +81,7 @@
     <li><b>Bug reports:</b> report text, reporter ID, server context, report ID and timestamp. Reports may be forwarded to the operator’s Discord messages and a configured report channel, including channel context.</li>
     <li><b>Deleted messages:</b> the snipe feature temporarily retains author information, a bounded content excerpt, deletion time and an attachment URL when present. Command messages are excluded from this cache.</li>
   </ul>
+  <p>Ticket customization also stores panel/opening message and embed templates, media/link URLs, menu type, stable reason identifiers and labels, optional per-reason category/support-role routing, channel-name templates and ping preferences. Open-ticket records include the selected reason and option identifier alongside ownership/channel metadata. Ticket messages remain in Discord; these customization records are not a separate transcript archive. Private announcement previews render saved or draft text without changing configuration. Discord may load administrator-provided embed media and links under its own handling.</p>
   <h4>3. Why data is used and who can see it</h4>
   <p>Data is used to deliver requested or administrator-configured features, enforce permissions, operate moderation and anti-abuse controls, investigate reports, and maintain the service. We do not sell or license Discord user data, use it for advertising, or use message content to train AI models.</p>
   <p>Command responses and feature output are often visible in their Discord channel. Examples include leaderboards, AFK notices, reminders and polls. Ticket participants, support staff and administrators may see ticket content. Authorized moderators can retrieve recent snipes or membership history. When enabled, independently configured logging categories can send message/attachment metadata, member and profile changes, voice connection events, moderation and security actions, role/channel/permission changes, invites, webhooks, emoji/sticker changes, commands/errors and configuration events to selected channels. Actors are identified only where supported by reliable event or audit-log information. Voice logs describe connection events, not audio. Event delivery depends on Discord permissions, intents, availability and bounded processing; message edit/delete logs do not copy message bodies, and command messages are excluded.</p>
@@ -116,5 +118,5 @@
 
   </main>
   <button class="theme-toggle" id="themeToggle" aria-label="Toggle light / dark mode"><span class="theme-icon theme-icon-moon">🌙</span><span class="theme-icon theme-icon-sun">☀️</span></button>
-  <script src="script.js?v=4"></script>
+  <script src="script.js?v=6"></script>
 </body></html>

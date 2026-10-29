@@ -1,7 +1,7 @@
 // Generated offline from the registered bot commands.
 window.SKYE_DOCS = {
-  "updated": "2026-10-28",
-  "count": 364,
+  "updated": "2026-10-29",
+  "count": 365,
   "commands": [
     {
       "name": "2048",
@@ -27,8 +27,8 @@ window.SKYE_DOCS = {
       "example": ".2048",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -109,8 +109,8 @@ window.SKYE_DOCS = {
       "example": ".afk [reason=AFK]",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -148,8 +148,8 @@ window.SKYE_DOCS = {
       "example": ".announce <message>",
       "concurrency": "<MaxConcurrency per=<BucketType.guild: 2> number=1 wait=False>",
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -171,15 +171,14 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".antinuke",
       "concurrency": null,
       "notes": [
+        "Additional authorization check: antinuke_access\nServer only\nServer owner required while owner-lock is enabled (default); owner-only fallback approval.",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Additional authorization check: antinuke_access",
-        "Server only",
-        "Server owner required while owner-lock is enabled (default); owner-only fallback approval."
+        "`.antinuke action <response>`\n`.antinuke cooldown <seconds>`\n`.antinuke disable`\n`.antinuke escalation <steps> [seconds=300]`\n`.antinuke fallback <action>`\n`.antinuke ownerlock <state>`\n`.antinuke response <action> <response>`\n`.antinuke rule <action> <limit> [seconds=10]`\n`.antinuke rules`\n`.antinuke setup <channel>`\n`.antinuke threshold`\n`.antinuke timeout <minutes>`\n`.antinuke trust`"
       ]
     },
     {
@@ -207,7 +206,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "response",
@@ -227,10 +226,8 @@ window.SKYE_DOCS = {
       "example": ".antinuke action <response>",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Additional authorization check: antinuke_access",
-        "Server only",
-        "Server owner required while owner-lock is enabled (default); owner-only fallback approval."
+        "Additional authorization check: antinuke_access\nServer only\nServer owner required while owner-lock is enabled (default); owner-only fallback approval.",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -254,7 +251,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "seconds",
@@ -269,10 +266,8 @@ window.SKYE_DOCS = {
       "example": ".antinuke cooldown 20",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Additional authorization check: antinuke_access",
-        "Server only",
-        "Server owner required while owner-lock is enabled (default); owner-only fallback approval."
+        "Additional authorization check: antinuke_access\nServer only\nServer owner required while owner-lock is enabled (default); owner-only fallback approval.",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -300,15 +295,13 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".antinuke disable",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Additional authorization check: antinuke_access",
-        "Server only",
-        "Server owner required while owner-lock is enabled (default); owner-only fallback approval."
+        "Additional authorization check: antinuke_access\nServer only\nServer owner required while owner-lock is enabled (default); owner-only fallback approval.",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -332,7 +325,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "steps",
@@ -357,11 +350,8 @@ window.SKYE_DOCS = {
       "example": ".antinuke escalation log,timeout,kick 300",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Additional authorization check: antinuke_access",
-        "Current server owner only.",
-        "Server only",
-        "Server owner required while owner-lock is enabled (default); owner-only fallback approval."
+        "Additional authorization check: antinuke_access\nCurrent server owner only.\nServer only\nServer owner required while owner-lock is enabled (default); owner-only fallback approval.",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -385,7 +375,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "action",
@@ -400,10 +390,8 @@ window.SKYE_DOCS = {
       "example": ".antinuke fallback <action>",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Additional authorization check: antinuke_access",
-        "Server only",
-        "Server owner required while owner-lock is enabled (default); owner-only fallback approval."
+        "Additional authorization check: antinuke_access\nServer only\nServer owner required while owner-lock is enabled (default); owner-only fallback approval.",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -431,7 +419,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "state",
@@ -449,10 +437,8 @@ window.SKYE_DOCS = {
       "example": ".antinuke ownerlock <state>",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Additional authorization check: antinuke_access",
-        "Server only",
-        "Server owner required while owner-lock is enabled (default); owner-only fallback approval."
+        "Additional authorization check: antinuke_access\nServer only\nServer owner required while owner-lock is enabled (default); owner-only fallback approval.",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -480,7 +466,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "action",
@@ -530,10 +516,8 @@ window.SKYE_DOCS = {
       "example": ".antinuke response <action> <response>",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Additional authorization check: antinuke_access",
-        "Server only",
-        "Server owner required while owner-lock is enabled (default); owner-only fallback approval."
+        "Additional authorization check: antinuke_access\nServer only\nServer owner required while owner-lock is enabled (default); owner-only fallback approval.",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -557,7 +541,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "action",
@@ -612,10 +596,8 @@ window.SKYE_DOCS = {
       "example": ".antinuke rule <action> <limit> [seconds=10]",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Additional authorization check: antinuke_access",
-        "Server only",
-        "Server owner required while owner-lock is enabled (default); owner-only fallback approval."
+        "Additional authorization check: antinuke_access\nServer only\nServer owner required while owner-lock is enabled (default); owner-only fallback approval.",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -639,15 +621,13 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".antinuke rules",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Additional authorization check: antinuke_access",
-        "Server only",
-        "Server owner required while owner-lock is enabled (default); owner-only fallback approval."
+        "Additional authorization check: antinuke_access\nServer only\nServer owner required while owner-lock is enabled (default); owner-only fallback approval.",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -681,7 +661,7 @@ window.SKYE_DOCS = {
         "View Audit Log (server)"
       ],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "channel",
@@ -696,11 +676,9 @@ window.SKYE_DOCS = {
       "example": ".antinuke setup <channel>",
       "concurrency": null,
       "notes": [
+        "Additional authorization check: antinuke_access\nServer only\nServer owner required while owner-lock is enabled (default); owner-only fallback approval.",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Additional authorization check: antinuke_access",
-        "Server only",
-        "Server owner required while owner-lock is enabled (default); owner-only fallback approval."
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -730,15 +708,14 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".antinuke threshold",
       "concurrency": null,
       "notes": [
+        "Additional authorization check: antinuke_access\nServer only\nServer owner required while owner-lock is enabled (default); owner-only fallback approval.",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Additional authorization check: antinuke_access",
-        "Server only",
-        "Server owner required while owner-lock is enabled (default); owner-only fallback approval."
+        "`.antinuke threshold disable <action>`\n`.antinuke threshold enable <action>`\n`.antinuke threshold reset [action]`\n`.antinuke threshold set <action> <limit> [seconds=10]`"
       ]
     },
     {
@@ -773,7 +750,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "action",
@@ -809,10 +786,8 @@ window.SKYE_DOCS = {
       "example": ".antinuke threshold disable <action>",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Additional authorization check: antinuke_access",
-        "Server only",
-        "Server owner required while owner-lock is enabled (default); owner-only fallback approval."
+        "Additional authorization check: antinuke_access\nServer only\nServer owner required while owner-lock is enabled (default); owner-only fallback approval.",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -847,7 +822,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "action",
@@ -883,10 +858,8 @@ window.SKYE_DOCS = {
       "example": ".antinuke threshold enable <action>",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Additional authorization check: antinuke_access",
-        "Server only",
-        "Server owner required while owner-lock is enabled (default); owner-only fallback approval."
+        "Additional authorization check: antinuke_access\nServer only\nServer owner required while owner-lock is enabled (default); owner-only fallback approval.",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -921,7 +894,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "action",
@@ -937,10 +910,8 @@ window.SKYE_DOCS = {
       "example": ".antinuke threshold reset [action]",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Additional authorization check: antinuke_access",
-        "Server only",
-        "Server owner required while owner-lock is enabled (default); owner-only fallback approval."
+        "Additional authorization check: antinuke_access\nServer only\nServer owner required while owner-lock is enabled (default); owner-only fallback approval.",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -977,7 +948,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "action",
@@ -1032,10 +1003,8 @@ window.SKYE_DOCS = {
       "example": ".antinuke threshold set <action> <limit> [seconds=10]",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Additional authorization check: antinuke_access",
-        "Server only",
-        "Server owner required while owner-lock is enabled (default); owner-only fallback approval."
+        "Additional authorization check: antinuke_access\nServer only\nServer owner required while owner-lock is enabled (default); owner-only fallback approval.",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -1063,7 +1032,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "minutes",
@@ -1078,10 +1047,8 @@ window.SKYE_DOCS = {
       "example": ".antinuke timeout <minutes>",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Additional authorization check: antinuke_access",
-        "Server only",
-        "Server owner required while owner-lock is enabled (default); owner-only fallback approval."
+        "Additional authorization check: antinuke_access\nServer only\nServer owner required while owner-lock is enabled (default); owner-only fallback approval.",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -1109,15 +1076,14 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".antinuke trust",
       "concurrency": null,
       "notes": [
+        "Additional authorization check: antinuke_access\nServer only\nServer owner required while owner-lock is enabled (default); owner-only fallback approval.",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Additional authorization check: antinuke_access",
-        "Server only",
-        "Server owner required while owner-lock is enabled (default); owner-only fallback approval."
+        "`.antinuke trust add <member>`\n`.antinuke trust remove <member>`\n`.antinuke trust roleadd <role>`\n`.antinuke trust roleremove <role>`"
       ]
     },
     {
@@ -1151,7 +1117,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "member",
@@ -1166,11 +1132,9 @@ window.SKYE_DOCS = {
       "example": ".antinuke trust add <member>",
       "concurrency": null,
       "notes": [
+        "Additional authorization check: antinuke_access\nServer only\nServer owner required while owner-lock is enabled (default); owner-only fallback approval.",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Additional authorization check: antinuke_access",
-        "Server only",
-        "Server owner required while owner-lock is enabled (default); owner-only fallback approval."
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -1204,7 +1168,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "member",
@@ -1219,11 +1183,9 @@ window.SKYE_DOCS = {
       "example": ".antinuke trust remove <member>",
       "concurrency": null,
       "notes": [
+        "Additional authorization check: antinuke_access\nServer only\nServer owner required while owner-lock is enabled (default); owner-only fallback approval.",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Additional authorization check: antinuke_access",
-        "Server only",
-        "Server owner required while owner-lock is enabled (default); owner-only fallback approval."
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -1257,7 +1219,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "role",
@@ -1272,11 +1234,9 @@ window.SKYE_DOCS = {
       "example": ".antinuke trust roleadd <role>",
       "concurrency": null,
       "notes": [
+        "Additional authorization check: antinuke_access\nServer only\nServer owner required while owner-lock is enabled (default); owner-only fallback approval.",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Additional authorization check: antinuke_access",
-        "Server only",
-        "Server owner required while owner-lock is enabled (default); owner-only fallback approval."
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -1310,7 +1270,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "role",
@@ -1325,11 +1285,9 @@ window.SKYE_DOCS = {
       "example": ".antinuke trust roleremove <role>",
       "concurrency": null,
       "notes": [
+        "Additional authorization check: antinuke_access\nServer only\nServer owner required while owner-lock is enabled (default); owner-only fallback approval.",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Additional authorization check: antinuke_access",
-        "Server only",
-        "Server owner required while owner-lock is enabled (default); owner-only fallback approval."
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -1351,13 +1309,14 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".antiraid",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "`.antiraid action <response>`\n`.antiraid allow`\n`.antiraid bots <state>`\n`.antiraid budget <limit>`\n`.antiraid cooldown <seconds>`\n`.antiraid disable`\n`.antiraid minage <hours>`\n`.antiraid mode <state>`\n`.antiraid quarantine [role]`\n`.antiraid recovery <seconds>`\n`.antiraid recoveryreview`\n`.antiraid rejoin <limit> [seconds=300]`\n`.antiraid release <member>`\n`.antiraid setup <channel>`\n`.antiraid spam <state> [messages=20] [seconds=10] [members=3] [per_member=6] [recent_minutes=10]`\n`.antiraid threshold <joins> [seconds=10]`\n`.antiraid timeout <minutes>`\n`.antiraid verification <level>`\n`.antiraid young <limit> [seconds=30]`"
       ]
     },
     {
@@ -1385,7 +1344,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "response",
@@ -1406,8 +1365,8 @@ window.SKYE_DOCS = {
       "example": ".antiraid action <response>",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -1437,13 +1396,14 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".antiraid allow",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "`.antiraid allow add <user>`\n`.antiraid allow remove <user_id>`"
       ]
     },
     {
@@ -1474,7 +1434,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "user",
@@ -1489,9 +1449,9 @@ window.SKYE_DOCS = {
       "example": ".antiraid allow add <user>",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -1526,7 +1486,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "user_id",
@@ -1541,9 +1501,9 @@ window.SKYE_DOCS = {
       "example": ".antiraid allow remove 123456789012345678",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -1571,7 +1531,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "state",
@@ -1589,8 +1549,8 @@ window.SKYE_DOCS = {
       "example": ".antiraid bots <state>",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -1614,7 +1574,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "limit",
@@ -1629,8 +1589,8 @@ window.SKYE_DOCS = {
       "example": ".antiraid budget 10",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -1654,7 +1614,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "seconds",
@@ -1669,8 +1629,8 @@ window.SKYE_DOCS = {
       "example": ".antiraid cooldown 60",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -1698,13 +1658,13 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".antiraid disable",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -1732,13 +1692,13 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "hours",
           "type": "integer (minimum 0, maximum 2160)",
           "required": true,
-          "description": "Value for hours.",
+          "description": "",
           "minimum": 0,
           "maximum": 2160,
           "choices": []
@@ -1747,8 +1707,8 @@ window.SKYE_DOCS = {
       "example": ".antiraid minage <hours>",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -1772,7 +1732,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "state",
@@ -1791,8 +1751,8 @@ window.SKYE_DOCS = {
       "example": ".antiraid mode auto",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -1822,7 +1782,7 @@ window.SKYE_DOCS = {
         "Manage Roles (server)"
       ],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "role",
@@ -1838,9 +1798,9 @@ window.SKYE_DOCS = {
       "example": ".antiraid quarantine [role]",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -1864,7 +1824,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "seconds",
@@ -1879,8 +1839,8 @@ window.SKYE_DOCS = {
       "example": ".antiraid recovery 120",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -1904,13 +1864,13 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".antiraid recoveryreview",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -1934,7 +1894,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "limit",
@@ -1959,8 +1919,8 @@ window.SKYE_DOCS = {
       "example": ".antiraid rejoin 3 300",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -1984,7 +1944,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "member",
@@ -1999,9 +1959,9 @@ window.SKYE_DOCS = {
       "example": ".antiraid release <member>",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -2034,7 +1994,7 @@ window.SKYE_DOCS = {
         "Send Messages (server)"
       ],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "channel",
@@ -2049,9 +2009,9 @@ window.SKYE_DOCS = {
       "example": ".antiraid setup <channel>",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -2075,7 +2035,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "state",
@@ -2093,7 +2053,7 @@ window.SKYE_DOCS = {
           "name": "messages",
           "type": "integer (minimum 3, maximum 200)",
           "required": false,
-          "description": "Value for messages.",
+          "description": "",
           "minimum": 3,
           "maximum": 200,
           "choices": [],
@@ -2143,8 +2103,8 @@ window.SKYE_DOCS = {
       "example": ".antiraid spam on 20 10 3 6 10",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -2172,13 +2132,13 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "joins",
           "type": "integer (minimum 3, maximum 100)",
           "required": true,
-          "description": "Value for joins.",
+          "description": "",
           "minimum": 3,
           "maximum": 100,
           "choices": []
@@ -2197,8 +2157,8 @@ window.SKYE_DOCS = {
       "example": ".antiraid threshold <joins> [seconds=10]",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -2226,7 +2186,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "minutes",
@@ -2241,8 +2201,8 @@ window.SKYE_DOCS = {
       "example": ".antiraid timeout <minutes>",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -2266,7 +2226,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "level",
@@ -2287,8 +2247,8 @@ window.SKYE_DOCS = {
       "example": ".antiraid verification high",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -2312,7 +2272,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "limit",
@@ -2337,8 +2297,8 @@ window.SKYE_DOCS = {
       "example": ".antiraid young 5 30",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -2378,9 +2338,9 @@ window.SKYE_DOCS = {
       "example": ".archive [channel]",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -2418,8 +2378,8 @@ window.SKYE_DOCS = {
       "example": ".attachments [message]",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -2496,9 +2456,9 @@ window.SKYE_DOCS = {
       "access": "Everyone",
       "botPermissions": [],
       "features": [
-        "economy"
+        "Enabled feature: economy"
       ],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "member",
@@ -2514,10 +2474,9 @@ window.SKYE_DOCS = {
       "example": ".balance [member]",
       "concurrency": null,
       "notes": [
+        "Enabled feature: economy\nServer only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Enabled feature: economy",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -2584,10 +2543,10 @@ window.SKYE_DOCS = {
       "example": ".ban <user> [duration=0] [reason=No reason provided]",
       "concurrency": "<MaxConcurrency per=<BucketType.guild: 2> number=1 wait=False>",
       "notes": [
-        "Current permissions and hierarchy still apply when using IDs. Reasons are limited to 1–400 characters without control characters. Duration inputs use minutes for bare numbers or s/m/h/d combinations, with a 64-character/ten-year parser limit; timeouts are limited to 28 days. New completed actions retain up to 1,000 server-local cases, visible privately through memberhistory. Cases are not reconstructed for past actions.",
+        "Current permissions and hierarchy still apply when using IDs. Reasons are limited to 1\u2013400 characters without control characters. Duration inputs use minutes for bare numbers or s/m/h/d combinations, with a 64-character/ten-year parser limit; timeouts are limited to 28 days. New completed actions retain up to 1,000 server-local cases, visible privately through memberhistory. Cases are not reconstructed for past actions.",
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -2648,7 +2607,7 @@ window.SKYE_DOCS = {
       "access": "Everyone",
       "botPermissions": [],
       "features": [
-        "economy"
+        "Enabled feature: economy"
       ],
       "cooldown": "1 use(s) per 8s; scope: member",
       "parameters": [
@@ -2665,11 +2624,11 @@ window.SKYE_DOCS = {
       "example": ".blackjack <wager>",
       "concurrency": null,
       "notes": [
-        "Hit, stand, double down or surrender. Dealer stands on all 17s. A two-card natural pays 3:2 profit (2.5× total, rounded down); equal naturals push. Other wins return 2×, pushes return the stake. Double requires matching funds, is first-action only, draws one card and stands. First-action surrender returns half. No split or insurance. Timeout forfeits the escrowed stake.",
-        "Virtual server currency only. Use 1–100,000 or all; payouts include the stake. Interactive games cannot resume after a process restart.",
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Enabled feature: economy",
-        "Server only"
+        "Hit, stand, double down or surrender. Dealer stands on all 17s. A two-card natural pays 3:2 profit (2.5\u00d7 total, rounded down); equal naturals push. Other wins return 2\u00d7, pushes return the stake. Double requires matching funds, is first-action only, draws one card and stands. First-action surrender returns half. No split or insurance. Timeout forfeits the escrowed stake.",
+        "Virtual server currency only. Use 1\u2013100,000 or all; payouts include the stake. Interactive games cannot resume after a process restart.",
+        "`.blackjack rules` \u00b7 Read these details without playing using `.help blackjack`.",
+        "Enabled feature: economy\nServer only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -2729,14 +2688,15 @@ window.SKYE_DOCS = {
       "access": "Everyone",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".boosterole",
       "concurrency": null,
       "notes": [
+        "Creation, color, name and sharing require an active server booster. All edits require registered role ownership. Owners may unshare or delete after boosting stops.\nServer only",
+        "Role creation, edits, sharing, removal and periodic maintenance serialize per owner so simultaneous requests do not overwrite each other\u2019s saved state.",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Creation, color, name and sharing require an active server booster. All edits require registered role ownership. Owners may unshare or delete after boosting stops.",
-        "Server only"
+        "`.boosterole color <primary> [secondary] [tertiary]`\n`.boosterole create <name> [color=#8B9CF6]`\n`.boosterole delete`\n`.boosterole name <name>`\n`.boosterole share <member>`\n`.boosterole unshare <member>`"
       ]
     },
     {
@@ -2808,9 +2768,9 @@ window.SKYE_DOCS = {
       "example": ".boosterole color <primary> [secondary] [tertiary]",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Creation, color, name and sharing require an active server booster. All edits require registered role ownership. Owners may unshare or delete after boosting stops.",
-        "Server only"
+        "Creation, color, name and sharing require an active server booster. All edits require registered role ownership. Owners may unshare or delete after boosting stops.\nServer only",
+        "Role creation, edits, sharing, removal and periodic maintenance serialize per owner so simultaneous requests do not overwrite each other\u2019s saved state.",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -2868,9 +2828,9 @@ window.SKYE_DOCS = {
       "example": ".boosterole create <name> [color=#8B9CF6]",
       "concurrency": "<MaxConcurrency per=<BucketType.member: 4> number=1 wait=False>",
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Creation, color, name and sharing require an active server booster. All edits require registered role ownership. Owners may unshare or delete after boosting stops.",
-        "Server only"
+        "Creation, color, name and sharing require an active server booster. All edits require registered role ownership. Owners may unshare or delete after boosting stops.\nServer only",
+        "Role creation, edits, sharing, removal and periodic maintenance serialize per owner so simultaneous requests do not overwrite each other\u2019s saved state.",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -2908,9 +2868,9 @@ window.SKYE_DOCS = {
       "example": ".boosterole delete",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Creation, color, name and sharing require an active server booster. All edits require registered role ownership. Owners may unshare or delete after boosting stops.",
-        "Server only"
+        "Creation, color, name and sharing require an active server booster. All edits require registered role ownership. Owners may unshare or delete after boosting stops.\nServer only",
+        "Role creation, edits, sharing, removal and periodic maintenance serialize per owner so simultaneous requests do not overwrite each other\u2019s saved state.",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -2941,7 +2901,7 @@ window.SKYE_DOCS = {
         "Manage Roles (server)"
       ],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "name",
@@ -2956,9 +2916,9 @@ window.SKYE_DOCS = {
       "example": ".boosterole name <name>",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Creation, color, name and sharing require an active server booster. All edits require registered role ownership. Owners may unshare or delete after boosting stops.",
-        "Server only"
+        "Creation, color, name and sharing require an active server booster. All edits require registered role ownership. Owners may unshare or delete after boosting stops.\nServer only",
+        "Role creation, edits, sharing, removal and periodic maintenance serialize per owner so simultaneous requests do not overwrite each other\u2019s saved state.",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -3006,10 +2966,10 @@ window.SKYE_DOCS = {
       "example": ".boosterole share <member>",
       "concurrency": "<MaxConcurrency per=<BucketType.member: 4> number=1 wait=False>",
       "notes": [
+        "Creation, color, name and sharing require an active server booster. All edits require registered role ownership. Owners may unshare or delete after boosting stops.\nServer only",
+        "Role creation, edits, sharing, removal and periodic maintenance serialize per owner so simultaneous requests do not overwrite each other\u2019s saved state.",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Creation, color, name and sharing require an active server booster. All edits require registered role ownership. Owners may unshare or delete after boosting stops.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -3042,7 +3002,7 @@ window.SKYE_DOCS = {
         "Manage Roles (server)"
       ],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "member",
@@ -3057,10 +3017,10 @@ window.SKYE_DOCS = {
       "example": ".boosterole unshare <member>",
       "concurrency": null,
       "notes": [
+        "Creation, color, name and sharing require an active server booster. All edits require registered role ownership. Owners may unshare or delete after boosting stops.\nServer only",
+        "Role creation, edits, sharing, removal and periodic maintenance serialize per owner so simultaneous requests do not overwrite each other\u2019s saved state.",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Creation, color, name and sharing require an active server booster. All edits require registered role ownership. Owners may unshare or delete after boosting stops.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -3094,7 +3054,7 @@ window.SKYE_DOCS = {
       "access": "Everyone",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".botinfo",
       "concurrency": null,
@@ -3126,8 +3086,8 @@ window.SKYE_DOCS = {
       "example": ".bots",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -3155,7 +3115,7 @@ window.SKYE_DOCS = {
           "name": "page",
           "type": "integer (minimum 1, maximum 1000000)",
           "required": false,
-          "description": "Value for page.",
+          "description": "",
           "minimum": 1,
           "maximum": 1000000,
           "choices": [],
@@ -3226,13 +3186,14 @@ window.SKYE_DOCS = {
       "access": "Everyone",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".bumpreminder",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "`.bumpreminder bot`\n`.bumpreminder delay <minutes>`\n`.bumpreminder disable`\n`.bumpreminder setup <channel> [role]`"
       ]
     },
     {
@@ -3261,13 +3222,14 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".bumpreminder bot",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "`.bumpreminder bot add <member>`\n`.bumpreminder bot remove <member>`"
       ]
     },
     {
@@ -3302,7 +3264,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "member",
@@ -3317,9 +3279,9 @@ window.SKYE_DOCS = {
       "example": ".bumpreminder bot add <member>",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -3356,7 +3318,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "member",
@@ -3371,9 +3333,9 @@ window.SKYE_DOCS = {
       "example": ".bumpreminder bot remove <member>",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -3404,7 +3366,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "minutes",
@@ -3419,8 +3381,8 @@ window.SKYE_DOCS = {
       "example": ".bumpreminder delay <minutes>",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -3451,13 +3413,13 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".bumpreminder disable",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -3496,7 +3458,7 @@ window.SKYE_DOCS = {
         "Send Messages (server)"
       ],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "channel",
@@ -3521,9 +3483,9 @@ window.SKYE_DOCS = {
       "example": ".bumpreminder setup <channel> [role]",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -3547,7 +3509,7 @@ window.SKYE_DOCS = {
         "Manage Roles (server)"
       ],
       "features": [
-        "server_options"
+        "Enabled feature: server_options"
       ],
       "cooldown": "1 use(s) per 15s; scope: guild",
       "parameters": [
@@ -3564,7 +3526,7 @@ window.SKYE_DOCS = {
           "name": "label",
           "type": "text",
           "required": false,
-          "description": "Value for label.",
+          "description": "",
           "minimum": null,
           "maximum": null,
           "choices": [],
@@ -3574,10 +3536,9 @@ window.SKYE_DOCS = {
       "example": ".buttonrole <role> [label]",
       "concurrency": "<MaxConcurrency per=<BucketType.guild: 2> number=1 wait=False>",
       "notes": [
+        "Enabled feature: server_options\nServer only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Enabled feature: server_options",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -3654,9 +3615,9 @@ window.SKYE_DOCS = {
       "example": ".channelinfo [channel]",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -3685,8 +3646,8 @@ window.SKYE_DOCS = {
       "example": ".channels",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -3713,8 +3674,8 @@ window.SKYE_DOCS = {
       "example": ".channelstats",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -3780,8 +3741,9 @@ window.SKYE_DOCS = {
       "example": ".cleanup",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "`.cleanup channels <targets>`\n`.cleanup roles <targets>`\n`.cleanup webhooks <targets>`"
       ]
     },
     {
@@ -3806,7 +3768,7 @@ window.SKYE_DOCS = {
         "Manage Channels (server)"
       ],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "targets",
@@ -3821,8 +3783,8 @@ window.SKYE_DOCS = {
       "example": ".cleanup channels <targets>",
       "concurrency": "<MaxConcurrency per=<BucketType.guild: 2> number=1 wait=False>",
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -3847,7 +3809,7 @@ window.SKYE_DOCS = {
         "Manage Roles (server)"
       ],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "targets",
@@ -3862,8 +3824,8 @@ window.SKYE_DOCS = {
       "example": ".cleanup roles <targets>",
       "concurrency": "<MaxConcurrency per=<BucketType.guild: 2> number=1 wait=False>",
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -3888,7 +3850,7 @@ window.SKYE_DOCS = {
         "Manage Webhooks (server)"
       ],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "targets",
@@ -3903,8 +3865,8 @@ window.SKYE_DOCS = {
       "example": ".cleanup webhooks <targets>",
       "concurrency": "<MaxConcurrency per=<BucketType.guild: 2> number=1 wait=False>",
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -3933,8 +3895,8 @@ window.SKYE_DOCS = {
       "example": ".clearsnipes",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -3956,7 +3918,7 @@ window.SKYE_DOCS = {
       "access": "Moderate Members (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "member",
@@ -3981,10 +3943,10 @@ window.SKYE_DOCS = {
       "example": ".clearwarnings <member> [reason=No reason provided]",
       "concurrency": null,
       "notes": [
-        "Current permissions and hierarchy still apply when using IDs. Reasons are limited to 1–400 characters without control characters. Duration inputs use minutes for bare numbers or s/m/h/d combinations, with a 64-character/ten-year parser limit; timeouts are limited to 28 days. New completed actions retain up to 1,000 server-local cases, visible privately through memberhistory. Cases are not reconstructed for past actions.",
+        "Current permissions and hierarchy still apply when using IDs. Reasons are limited to 1\u2013400 characters without control characters. Duration inputs use minutes for bare numbers or s/m/h/d combinations, with a 64-character/ten-year parser limit; timeouts are limited to 28 days. New completed actions retain up to 1,000 server-local cases, visible privately through memberhistory. Cases are not reconstructed for past actions.",
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -4032,9 +3994,9 @@ window.SKYE_DOCS = {
       "example": ".clone [channel] [name]",
       "concurrency": "<MaxConcurrency per=<BucketType.guild: 2> number=1 wait=False>",
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -4056,7 +4018,7 @@ window.SKYE_DOCS = {
       "access": "Everyone",
       "botPermissions": [],
       "features": [
-        "economy"
+        "Enabled feature: economy"
       ],
       "cooldown": "1 use(s) per 8s; scope: member",
       "parameters": [
@@ -4096,12 +4058,12 @@ window.SKYE_DOCS = {
       "example": ".coinflip <wager> [opponent] [side=heads]",
       "concurrency": null,
       "notes": [
-        "Choose heads or tails; fair 50/50 coin. A solo win returns 2×. Optional opponent must accept within 30 seconds; both stake the same amount and the winner takes the pot. No debit before acceptance; declined/expired challenges cost nothing.",
-        "Virtual server currency only. Use 1–100,000 or all; payouts include the stake. Interactive games cannot resume after a process restart.",
+        "Choose heads or tails; fair 50/50 coin. A solo win returns 2\u00d7. Optional opponent must accept within 30 seconds; both stake the same amount and the winner takes the pot. No debit before acceptance; declined/expired challenges cost nothing.",
+        "Virtual server currency only. Use 1\u2013100,000 or all; payouts include the stake. Interactive games cannot resume after a process restart.",
+        "`.coinflip rules` \u00b7 Read these details without playing using `.help coinflip`.",
+        "Enabled feature: economy\nServer only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Enabled feature: economy",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -4125,7 +4087,7 @@ window.SKYE_DOCS = {
       "access": "Everyone",
       "botPermissions": [],
       "features": [
-        "server_options"
+        "Enabled feature: server_options"
       ],
       "cooldown": "1 use(s) per 8s; scope: member",
       "parameters": [
@@ -4143,10 +4105,10 @@ window.SKYE_DOCS = {
       "example": ".colorrole [role]",
       "concurrency": "<MaxConcurrency per=<BucketType.member: 4> number=1 wait=False>",
       "notes": [
+        "Enabled feature: server_options\nServer only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
         "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Enabled feature: server_options",
-        "Server only"
+        "`.colorrole create <color> <name>`\n`.colorrole delete <role>`"
       ]
     },
     {
@@ -4177,7 +4139,7 @@ window.SKYE_DOCS = {
         "Manage Roles (server)"
       ],
       "features": [
-        "server_options"
+        "Enabled feature: server_options"
       ],
       "cooldown": "1 use(s) per 15s; scope: guild",
       "parameters": [
@@ -4203,9 +4165,8 @@ window.SKYE_DOCS = {
       "example": ".colorrole create <color> <name>",
       "concurrency": "<MaxConcurrency per=<BucketType.guild: 2> number=1 wait=False>",
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Enabled feature: server_options",
-        "Server only"
+        "Enabled feature: server_options\nServer only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -4236,9 +4197,9 @@ window.SKYE_DOCS = {
         "Manage Roles (server)"
       ],
       "features": [
-        "server_options"
+        "Enabled feature: server_options"
       ],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "role",
@@ -4253,10 +4214,9 @@ window.SKYE_DOCS = {
       "example": ".colorrole delete <role>",
       "concurrency": "<MaxConcurrency per=<BucketType.guild: 2> number=1 wait=False>",
       "notes": [
+        "Enabled feature: server_options\nServer only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Enabled feature: server_options",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -4282,7 +4242,7 @@ window.SKYE_DOCS = {
       "access": "Everyone",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "command_name",
@@ -4336,8 +4296,8 @@ window.SKYE_DOCS = {
       "example": ".confess <message>",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -4359,13 +4319,14 @@ window.SKYE_DOCS = {
       "access": "Everyone",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".confessions",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "`.confessions disable`\n`.confessions remove <confession_id>`\n`.confessions setup <channel>`"
       ]
     },
     {
@@ -4395,13 +4356,13 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".confessions disable",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -4431,13 +4392,13 @@ window.SKYE_DOCS = {
       "access": "Manage Messages (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "confession_id",
           "type": "text",
           "required": true,
-          "description": "Value for confession id.",
+          "description": "",
           "minimum": null,
           "maximum": null,
           "choices": []
@@ -4446,8 +4407,8 @@ window.SKYE_DOCS = {
       "example": ".confessions remove <confession_id>",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -4485,7 +4446,7 @@ window.SKYE_DOCS = {
         "Send Messages (server)"
       ],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "channel",
@@ -4500,9 +4461,9 @@ window.SKYE_DOCS = {
       "example": ".confessions setup <channel>",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -4540,9 +4501,9 @@ window.SKYE_DOCS = {
       "example": ".connect4 [opponent]",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -4564,13 +4525,14 @@ window.SKYE_DOCS = {
       "access": "Everyone",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".counting",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "`.counting disable`\n`.counting reset [number=0]`\n`.counting setup <channel>`"
       ]
     },
     {
@@ -4600,13 +4562,13 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".counting disable",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -4634,7 +4596,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "number",
@@ -4650,8 +4612,8 @@ window.SKYE_DOCS = {
       "example": ".counting reset [number=0]",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -4690,7 +4652,7 @@ window.SKYE_DOCS = {
         "Send Messages (server)"
       ],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "channel",
@@ -4705,9 +4667,9 @@ window.SKYE_DOCS = {
       "example": ".counting setup <channel>",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -4759,8 +4721,8 @@ window.SKYE_DOCS = {
       "example": ".create <kind> <name>",
       "concurrency": "<MaxConcurrency per=<BucketType.guild: 2> number=1 wait=False>",
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -4820,13 +4782,14 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".customalias",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "`.customalias add <alias> <command_name>`\n`.customalias remove <alias>`"
       ]
     },
     {
@@ -4857,7 +4820,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "alias",
@@ -4881,8 +4844,8 @@ window.SKYE_DOCS = {
       "example": ".customalias add <alias> <command_name>",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -4913,7 +4876,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "alias",
@@ -4928,8 +4891,8 @@ window.SKYE_DOCS = {
       "example": ".customalias remove <alias>",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -4955,16 +4918,15 @@ window.SKYE_DOCS = {
       "access": "Everyone",
       "botPermissions": [],
       "features": [
-        "economy"
+        "Enabled feature: economy"
       ],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".daily",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Enabled feature: economy",
-        "Server only"
+        "Enabled feature: economy\nServer only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -4984,7 +4946,7 @@ window.SKYE_DOCS = {
       "access": "Everyone",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".dare",
       "concurrency": null,
@@ -5011,13 +4973,13 @@ window.SKYE_DOCS = {
       "access": "Everyone",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".dashboard",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -5131,9 +5093,9 @@ window.SKYE_DOCS = {
       "example": ".delete [channel]",
       "concurrency": "<MaxConcurrency per=<BucketType.guild: 2> number=1 wait=False>",
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -5161,7 +5123,7 @@ window.SKYE_DOCS = {
       "access": "Everyone",
       "botPermissions": [],
       "features": [
-        "games"
+        "Enabled feature: games"
       ],
       "cooldown": "5 use(s) per 10s; scope: member",
       "parameters": [
@@ -5179,9 +5141,8 @@ window.SKYE_DOCS = {
       "example": ".dice [notation=1d6]",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Enabled feature: games",
-        "Server only"
+        "Enabled feature: games\nServer only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -5232,13 +5193,14 @@ window.SKYE_DOCS = {
       "access": "Everyone",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".economy",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "`.economy addbalance <member> <amount>`\n`.economy disable`\n`.economy enable`\n`.economy setbalance <member> <amount>`\n`.economy settings [setting] [value]`"
       ]
     },
     {
@@ -5267,7 +5229,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "member",
@@ -5291,9 +5253,9 @@ window.SKYE_DOCS = {
       "example": ".economy addbalance <member> <amount>",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -5322,13 +5284,13 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".economy disable",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -5357,13 +5319,13 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".economy enable",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -5392,7 +5354,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "member",
@@ -5416,9 +5378,9 @@ window.SKYE_DOCS = {
       "example": ".economy setbalance <member> <amount>",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -5449,7 +5411,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "setting",
@@ -5475,8 +5437,8 @@ window.SKYE_DOCS = {
       "example": ".economy settings [setting] [value]",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -5502,7 +5464,7 @@ window.SKYE_DOCS = {
       "access": "Everyone",
       "botPermissions": [],
       "features": [
-        "games"
+        "Enabled feature: games"
       ],
       "cooldown": "3 use(s) per 10s; scope: member",
       "parameters": [
@@ -5519,9 +5481,8 @@ window.SKYE_DOCS = {
       "example": ".eightball <question>",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Enabled feature: games",
-        "Server only"
+        "Enabled feature: games\nServer only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -5559,8 +5520,8 @@ window.SKYE_DOCS = {
       "example": ".embed <content>",
       "concurrency": "<MaxConcurrency per=<BucketType.member: 4> number=1 wait=False>",
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -5590,8 +5551,9 @@ window.SKYE_DOCS = {
       "example": ".embedbuilder",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "`.embedbuilder delete <name>`\n`.embedbuilder saved`"
       ]
     },
     {
@@ -5618,7 +5580,7 @@ window.SKYE_DOCS = {
         "Send Messages (channel)"
       ],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "name",
@@ -5633,8 +5595,8 @@ window.SKYE_DOCS = {
       "example": ".embedbuilder delete <name>",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -5665,13 +5627,13 @@ window.SKYE_DOCS = {
         "Send Messages (channel)"
       ],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".embedbuilder saved",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -5732,13 +5694,14 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".features",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "`.features disable <feature>`\n`.features enable <feature>`"
       ]
     },
     {
@@ -5769,7 +5732,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "feature",
@@ -5797,8 +5760,8 @@ window.SKYE_DOCS = {
       "example": ".features disable <feature>",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -5829,7 +5792,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "feature",
@@ -5857,8 +5820,8 @@ window.SKYE_DOCS = {
       "example": ".features enable <feature>",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -5880,13 +5843,14 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".filter",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "`.filter action <action>`\n`.filter add <term>`\n`.filter disable`\n`.filter enable`\n`.filter exempt`\n`.filter list`\n`.filter log [channel]`\n`.filter remove <term>`\n`.filter spam`\n`.filter timeout <minutes>`"
       ]
     },
     {
@@ -5914,7 +5878,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "action",
@@ -5939,8 +5903,8 @@ window.SKYE_DOCS = {
       "example": ".filter action <action>",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -5970,7 +5934,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "term",
@@ -5985,8 +5949,8 @@ window.SKYE_DOCS = {
       "example": ".filter add <term>",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -6014,13 +5978,13 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".filter disable",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -6050,13 +6014,13 @@ window.SKYE_DOCS = {
         "Manage Messages (server)"
       ],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".filter enable",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -6086,13 +6050,14 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".filter exempt",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "`.filter exempt remove <member>`\n`.filter exempt role <role>`\n`.filter exempt roleremove <role>`\n`.filter exempt user <member>`"
       ]
     },
     {
@@ -6129,7 +6094,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "member",
@@ -6144,9 +6109,9 @@ window.SKYE_DOCS = {
       "example": ".filter exempt remove <member>",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -6181,7 +6146,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "role",
@@ -6196,9 +6161,9 @@ window.SKYE_DOCS = {
       "example": ".filter exempt role <role>",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -6235,7 +6200,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "role",
@@ -6250,9 +6215,9 @@ window.SKYE_DOCS = {
       "example": ".filter exempt roleremove <role>",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -6289,7 +6254,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "member",
@@ -6304,9 +6269,9 @@ window.SKYE_DOCS = {
       "example": ".filter exempt user <member>",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -6336,13 +6301,13 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".filter list",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -6366,7 +6331,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "channel",
@@ -6382,9 +6347,9 @@ window.SKYE_DOCS = {
       "example": ".filter log [channel]",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -6414,7 +6379,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "term",
@@ -6429,8 +6394,8 @@ window.SKYE_DOCS = {
       "example": ".filter remove <term>",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -6454,13 +6419,14 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".filter spam",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "`.filter spam action <action>`\n`.filter spam disable`\n`.filter spam enable`\n`.filter spam set <limit> <seconds>`"
       ]
     },
     {
@@ -6488,7 +6454,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "action",
@@ -6511,8 +6477,8 @@ window.SKYE_DOCS = {
       "example": ".filter spam action <action>",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -6540,13 +6506,13 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".filter spam disable",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -6574,13 +6540,13 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".filter spam enable",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -6604,7 +6570,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "limit",
@@ -6628,8 +6594,8 @@ window.SKYE_DOCS = {
       "example": ".filter spam set <limit> <seconds>",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -6657,7 +6623,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "minutes",
@@ -6672,8 +6638,8 @@ window.SKYE_DOCS = {
       "example": ".filter timeout <minutes>",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -6697,16 +6663,16 @@ window.SKYE_DOCS = {
       "access": "Everyone",
       "botPermissions": [],
       "features": [
-        "giveaways"
+        "Enabled feature: giveaways"
       ],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".giveaway",
       "concurrency": null,
       "notes": [
+        "Enabled feature: giveaways\nServer only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Enabled feature: giveaways",
-        "Server only"
+        "`.giveaway end <giveaway_id>`\n`.giveaway reroll <giveaway_id>`\n`.giveaway start <duration> <winners> <prize>`"
       ]
     },
     {
@@ -6737,15 +6703,15 @@ window.SKYE_DOCS = {
       "access": "Manage Guild (server)",
       "botPermissions": [],
       "features": [
-        "giveaways"
+        "Enabled feature: giveaways"
       ],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "giveaway_id",
           "type": "text",
           "required": true,
-          "description": "Value for giveaway id.",
+          "description": "",
           "minimum": null,
           "maximum": null,
           "choices": []
@@ -6754,9 +6720,8 @@ window.SKYE_DOCS = {
       "example": ".giveaway end <giveaway_id>",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Enabled feature: giveaways",
-        "Server only"
+        "Enabled feature: giveaways\nServer only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -6785,15 +6750,15 @@ window.SKYE_DOCS = {
       "access": "Manage Guild (server)",
       "botPermissions": [],
       "features": [
-        "giveaways"
+        "Enabled feature: giveaways"
       ],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "giveaway_id",
           "type": "text",
           "required": true,
-          "description": "Value for giveaway id.",
+          "description": "",
           "minimum": null,
           "maximum": null,
           "choices": []
@@ -6802,9 +6767,8 @@ window.SKYE_DOCS = {
       "example": ".giveaway reroll <giveaway_id>",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Enabled feature: giveaways",
-        "Server only"
+        "Enabled feature: giveaways\nServer only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -6838,7 +6802,7 @@ window.SKYE_DOCS = {
         "Send Messages (server)"
       ],
       "features": [
-        "giveaways"
+        "Enabled feature: giveaways"
       ],
       "cooldown": "2 use(s) per 30s; scope: guild",
       "parameters": [
@@ -6873,9 +6837,8 @@ window.SKYE_DOCS = {
       "example": ".giveaway start <duration> <winners> <prize>",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Enabled feature: giveaways",
-        "Server only"
+        "Enabled feature: giveaways\nServer only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -6913,8 +6876,8 @@ window.SKYE_DOCS = {
       "example": ".guess [number]",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -6988,8 +6951,8 @@ window.SKYE_DOCS = {
       "example": ".hangman [guess]",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -7017,7 +6980,7 @@ window.SKYE_DOCS = {
       "access": "Everyone",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "category",
@@ -7083,9 +7046,9 @@ window.SKYE_DOCS = {
       "example": ".hide [channel] [target]",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -7184,8 +7147,8 @@ window.SKYE_DOCS = {
       "example": ".humans",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -7207,7 +7170,7 @@ window.SKYE_DOCS = {
       "access": "Everyone",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".invite",
       "concurrency": null,
@@ -7228,7 +7191,7 @@ window.SKYE_DOCS = {
       "access": "Everyone",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "user",
@@ -7244,9 +7207,10 @@ window.SKYE_DOCS = {
       "example": ".invites [user]",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
         "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "`.invites inviter [user]`\n`.invites server`\n`.invites stats [user]`"
       ]
     },
     {
@@ -7262,7 +7226,7 @@ window.SKYE_DOCS = {
       "access": "Everyone",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "user",
@@ -7278,9 +7242,9 @@ window.SKYE_DOCS = {
       "example": ".invites inviter [user]",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -7296,13 +7260,13 @@ window.SKYE_DOCS = {
       "access": "Everyone",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".invites server",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -7318,7 +7282,7 @@ window.SKYE_DOCS = {
       "access": "Everyone",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "user",
@@ -7334,9 +7298,9 @@ window.SKYE_DOCS = {
       "example": ".invites stats [user]",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -7352,13 +7316,14 @@ window.SKYE_DOCS = {
       "access": "Manage Guild (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".invitetrack",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "`.invitetrack disable`\n`.invitetrack enable`\n`.invitetrack threshold <seconds>`"
       ]
     },
     {
@@ -7374,13 +7339,13 @@ window.SKYE_DOCS = {
       "access": "Manage Guild (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".invitetrack disable",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -7396,20 +7361,20 @@ window.SKYE_DOCS = {
       "access": "Manage Guild (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".invitetrack enable",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
       "name": "invitetrack threshold",
       "category": "Invite Tracking",
       "serverOnly": true,
-      "description": "Set the fake-invite threshold for future joins, in seconds (1–2592000).",
+      "description": "Set the fake-invite threshold for future joins, in seconds (1\u20132592000).",
       "prefix": ".invitetrack threshold <seconds>",
       "slash": "/invitetrack threshold",
       "aliases": [],
@@ -7418,7 +7383,7 @@ window.SKYE_DOCS = {
       "access": "Manage Guild (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "seconds",
@@ -7433,8 +7398,8 @@ window.SKYE_DOCS = {
       "example": ".invitetrack threshold <seconds>",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -7474,9 +7439,9 @@ window.SKYE_DOCS = {
       "example": ".joined [member]",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -7516,8 +7481,8 @@ window.SKYE_DOCS = {
       "example": ".jumpto [message]",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -7572,10 +7537,10 @@ window.SKYE_DOCS = {
       "example": ".kick <member> [reason=No reason provided]",
       "concurrency": "<MaxConcurrency per=<BucketType.guild: 2> number=1 wait=False>",
       "notes": [
-        "Current permissions and hierarchy still apply when using IDs. Reasons are limited to 1–400 characters without control characters. Duration inputs use minutes for bare numbers or s/m/h/d combinations, with a 64-character/ten-year parser limit; timeouts are limited to 28 days. New completed actions retain up to 1,000 server-local cases, visible privately through memberhistory. Cases are not reconstructed for past actions.",
+        "Current permissions and hierarchy still apply when using IDs. Reasons are limited to 1\u2013400 characters without control characters. Duration inputs use minutes for bare numbers or s/m/h/d combinations, with a 64-character/ten-year parser limit; timeouts are limited to 28 days. New completed actions retain up to 1,000 server-local cases, visible privately through memberhistory. Cases are not reconstructed for past actions.",
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -7599,7 +7564,7 @@ window.SKYE_DOCS = {
       "access": "Everyone",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "member",
@@ -7675,7 +7640,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "language",
@@ -7694,8 +7659,8 @@ window.SKYE_DOCS = {
       "example": ".language [language]",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -7715,7 +7680,7 @@ window.SKYE_DOCS = {
       "access": "Everyone",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "amount",
@@ -7731,8 +7696,9 @@ window.SKYE_DOCS = {
       "example": ".leaderboard [amount=10]",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "`.leaderboard cash [amount=10]`\n`.leaderboard xp [amount=10]`"
       ]
     },
     {
@@ -7761,7 +7727,7 @@ window.SKYE_DOCS = {
       "access": "Everyone",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "amount",
@@ -7777,8 +7743,8 @@ window.SKYE_DOCS = {
       "example": ".leaderboard cash [amount=10]",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -7807,7 +7773,7 @@ window.SKYE_DOCS = {
       "access": "Everyone",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "amount",
@@ -7823,8 +7789,8 @@ window.SKYE_DOCS = {
       "example": ".leaderboard xp [amount=10]",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -7846,16 +7812,16 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [
-        "leveling"
+        "Enabled feature: leveling"
       ],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".levelconfig",
       "concurrency": null,
       "notes": [
+        "Enabled feature: leveling\nServer only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Enabled feature: leveling",
-        "Server only"
+        "`.levelconfig announcements <enabled> [channel]`\n`.levelconfig cooldown <seconds>`\n`.levelconfig reset <member>`\n`.levelconfig setxp <member> <xp>`\n`.levelconfig xp <minimum> <maximum>`"
       ]
     },
     {
@@ -7883,9 +7849,9 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [
-        "leveling"
+        "Enabled feature: leveling"
       ],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "enabled",
@@ -7910,10 +7876,9 @@ window.SKYE_DOCS = {
       "example": ".levelconfig announcements <enabled> [channel]",
       "concurrency": null,
       "notes": [
+        "Enabled feature: leveling\nServer only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Enabled feature: leveling",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -7937,9 +7902,9 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [
-        "leveling"
+        "Enabled feature: leveling"
       ],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "seconds",
@@ -7954,9 +7919,8 @@ window.SKYE_DOCS = {
       "example": ".levelconfig cooldown <seconds>",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Enabled feature: leveling",
-        "Server only"
+        "Enabled feature: leveling\nServer only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -7984,9 +7948,9 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [
-        "leveling"
+        "Enabled feature: leveling"
       ],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "member",
@@ -8001,10 +7965,9 @@ window.SKYE_DOCS = {
       "example": ".levelconfig reset <member>",
       "concurrency": null,
       "notes": [
+        "Enabled feature: leveling\nServer only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Enabled feature: leveling",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -8032,9 +7995,9 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [
-        "leveling"
+        "Enabled feature: leveling"
       ],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "member",
@@ -8058,10 +8021,9 @@ window.SKYE_DOCS = {
       "example": ".levelconfig setxp <member> <xp>",
       "concurrency": null,
       "notes": [
+        "Enabled feature: leveling\nServer only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Enabled feature: leveling",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -8085,9 +8047,9 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [
-        "leveling"
+        "Enabled feature: leveling"
       ],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "minimum",
@@ -8111,9 +8073,8 @@ window.SKYE_DOCS = {
       "example": ".levelconfig xp <minimum> <maximum>",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Enabled feature: leveling",
-        "Server only"
+        "Enabled feature: leveling\nServer only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -8141,16 +8102,15 @@ window.SKYE_DOCS = {
       "access": "Everyone",
       "botPermissions": [],
       "features": [
-        "leveling"
+        "Enabled feature: leveling"
       ],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".levels",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Enabled feature: leveling",
-        "Server only"
+        "Enabled feature: leveling\nServer only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -8174,7 +8134,7 @@ window.SKYE_DOCS = {
       "access": "Everyone",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".listall",
       "concurrency": null,
@@ -8226,8 +8186,8 @@ window.SKYE_DOCS = {
       "example": ".lock [reason=No reason provided]",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -8249,13 +8209,14 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".logs",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "`.logs bots <state>`\n`.logs categories`\n`.logs channel <category> [channel]`\n`.logs disable`\n`.logs event <event_name> <state>`\n`.logs fields <category> [fields=details,before,after]`\n`.logs format <category> <style> [title={category}: {action}]`\n`.logs health`\n`.logs ignore`\n`.logs rate <limit>`\n`.logs setup <channel>`"
       ]
     },
     {
@@ -8283,7 +8244,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "state",
@@ -8301,8 +8262,8 @@ window.SKYE_DOCS = {
       "example": ".logs bots <state>",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -8330,13 +8291,13 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".logs categories",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -8364,7 +8325,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "category",
@@ -8410,9 +8371,9 @@ window.SKYE_DOCS = {
       "example": ".logs channel <category> [channel]",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -8440,13 +8401,13 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".logs disable",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -8476,7 +8437,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "event_name",
@@ -8526,8 +8487,8 @@ window.SKYE_DOCS = {
       "example": ".logs event <event_name> <state>",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -8551,7 +8512,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "category",
@@ -8587,7 +8548,7 @@ window.SKYE_DOCS = {
           "name": "fields",
           "type": "text",
           "required": false,
-          "description": "Value for fields.",
+          "description": "",
           "minimum": null,
           "maximum": null,
           "choices": [],
@@ -8597,8 +8558,8 @@ window.SKYE_DOCS = {
       "example": ".logs fields <category> [fields=details,before,after]",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -8622,7 +8583,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "category",
@@ -8658,7 +8619,7 @@ window.SKYE_DOCS = {
           "name": "style",
           "type": "text",
           "required": true,
-          "description": "Value for style.",
+          "description": "",
           "minimum": null,
           "maximum": null,
           "choices": [
@@ -8670,7 +8631,7 @@ window.SKYE_DOCS = {
           "name": "title",
           "type": "text",
           "required": false,
-          "description": "Value for title.",
+          "description": "",
           "minimum": null,
           "maximum": null,
           "choices": [],
@@ -8680,8 +8641,8 @@ window.SKYE_DOCS = {
       "example": ".logs format <category> <style> [title={category}: {action}]",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -8705,13 +8666,13 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".logs health",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -8739,13 +8700,14 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".logs ignore",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "`.logs ignore add <channel>`\n`.logs ignore remove <channel>`"
       ]
     },
     {
@@ -8775,7 +8737,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "channel",
@@ -8790,9 +8752,9 @@ window.SKYE_DOCS = {
       "example": ".logs ignore add <channel>",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -8826,7 +8788,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "channel",
@@ -8841,9 +8803,9 @@ window.SKYE_DOCS = {
       "example": ".logs ignore remove <channel>",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -8867,7 +8829,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "limit",
@@ -8882,8 +8844,8 @@ window.SKYE_DOCS = {
       "example": ".logs rate <limit>",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -8916,7 +8878,7 @@ window.SKYE_DOCS = {
         "Send Messages (server)"
       ],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "channel",
@@ -8931,9 +8893,9 @@ window.SKYE_DOCS = {
       "example": ".logs setup <channel>",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -8960,8 +8922,8 @@ window.SKYE_DOCS = {
       "example": ".membercount",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -8998,9 +8960,9 @@ window.SKYE_DOCS = {
       "example": ".memberhistory <target>",
       "concurrency": "<MaxConcurrency per=<BucketType.member: 4> number=1 wait=False>",
       "notes": [
-        "Current permissions and hierarchy still apply when using IDs. Reasons are limited to 1–400 characters without control characters. Duration inputs use minutes for bare numbers or s/m/h/d combinations, with a 64-character/ten-year parser limit; timeouts are limited to 28 days. New completed actions retain up to 1,000 server-local cases, visible privately through memberhistory. Cases are not reconstructed for past actions.",
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Current permissions and hierarchy still apply when using IDs. Reasons are limited to 1\u2013400 characters without control characters. Duration inputs use minutes for bare numbers or s/m/h/d combinations, with a 64-character/ten-year parser limit; timeouts are limited to 28 days. New completed actions retain up to 1,000 server-local cases, visible privately through memberhistory. Cases are not reconstructed for past actions.",
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -9038,8 +9000,8 @@ window.SKYE_DOCS = {
       "example": ".messageinfo [message]",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -9078,15 +9040,15 @@ window.SKYE_DOCS = {
       "example": ".messagesearch <query>",
       "concurrency": "<MaxConcurrency per=<BucketType.channel: 3> number=1 wait=False>",
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
       "name": "mines",
       "category": "Economy",
       "serverOnly": true,
-      "description": "Choose 1–12 mines on a 4×4 board; reveal tiles or cash out. Clearing the board pays automatically. Use mines rules for odds, cap and timeout policy.",
+      "description": "Choose 1\u201312 mines on a 4\u00d74 board; reveal tiles or cash out. Clearing the board pays automatically. Use mines rules for odds, cap and timeout policy.",
       "prefix": ".mines <wager> [mine_count=4]",
       "slash": "/economy mines",
       "aliases": [
@@ -9101,7 +9063,7 @@ window.SKYE_DOCS = {
       "access": "Everyone",
       "botPermissions": [],
       "features": [
-        "economy"
+        "Enabled feature: economy"
       ],
       "cooldown": "1 use(s) per 8s; scope: member",
       "parameters": [
@@ -9118,7 +9080,7 @@ window.SKYE_DOCS = {
           "name": "mine_count",
           "type": "integer (minimum 1, maximum 12)",
           "required": false,
-          "description": "Number of mines on the 4×4 board: 1–12 (default 4).",
+          "description": "Number of mines on the 4\u00d74 board: 1\u201312 (default 4).",
           "minimum": 1,
           "maximum": 12,
           "choices": [],
@@ -9128,11 +9090,11 @@ window.SKYE_DOCS = {
       "example": ".mines <wager> [mine_count=4]",
       "concurrency": null,
       "notes": [
-        "4×4 board with 1–12 mines (default 4). Reveal safe tiles or cash out. Payout follows survival probability with a 3% house edge, rounded down and capped at 1,000×. Cashing out before a pick returns the stake. Clearing all safe tiles cashes out automatically. A mine or timeout loses the stake.",
-        "Virtual server currency only. Use 1–100,000 or all; payouts include the stake. Interactive games cannot resume after a process restart.",
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Enabled feature: economy",
-        "Server only"
+        "4\u00d74 board with 1\u201312 mines (default 4). Reveal safe tiles or cash out. Payout follows survival probability with a 3% house edge, rounded down and capped at 1,000\u00d7. Cashing out before a pick returns the stake. Clearing all safe tiles cashes out automatically. A mine or timeout loses the stake.",
+        "Virtual server currency only. Use 1\u2013100,000 or all; payouts include the stake. Interactive games cannot resume after a process restart.",
+        "`.mines rules` \u00b7 Read these details without playing using `.help mines`.",
+        "Enabled feature: economy\nServer only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -9154,7 +9116,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "channel",
@@ -9170,9 +9132,9 @@ window.SKYE_DOCS = {
       "example": ".modlog [channel]",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -9209,7 +9171,7 @@ window.SKYE_DOCS = {
           "name": "destination",
           "type": "CategoryChannel",
           "required": false,
-          "description": "Value for destination.",
+          "description": "",
           "minimum": null,
           "maximum": null,
           "choices": [],
@@ -9229,9 +9191,9 @@ window.SKYE_DOCS = {
       "example": ".move <channel> [destination] [position]",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -9282,9 +9244,9 @@ window.SKYE_DOCS = {
       "example": ".nick <member> [nickname]",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -9311,8 +9273,8 @@ window.SKYE_DOCS = {
       "example": ".onlinemembers",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -9378,7 +9340,7 @@ window.SKYE_DOCS = {
       "access": "Everyone",
       "botPermissions": [],
       "features": [
-        "economy"
+        "Enabled feature: economy"
       ],
       "cooldown": "3 use(s) per 20s; scope: member",
       "parameters": [
@@ -9404,10 +9366,9 @@ window.SKYE_DOCS = {
       "example": ".pay <member> <amount>",
       "concurrency": null,
       "notes": [
+        "Enabled feature: economy\nServer only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Enabled feature: economy",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -9455,9 +9416,9 @@ window.SKYE_DOCS = {
       "example": ".permissions [member] [channel]",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -9485,7 +9446,7 @@ window.SKYE_DOCS = {
           "name": "digits",
           "type": "integer (minimum 1, maximum 1000)",
           "required": false,
-          "description": "Value for digits.",
+          "description": "",
           "minimum": 1,
           "maximum": 1000,
           "choices": [],
@@ -9530,8 +9491,8 @@ window.SKYE_DOCS = {
       "example": ".pin [message]",
       "concurrency": "<MaxConcurrency per=<BucketType.channel: 3> number=1 wait=False>",
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -9559,7 +9520,7 @@ window.SKYE_DOCS = {
       "access": "Everyone",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".ping",
       "concurrency": null,
@@ -9604,9 +9565,9 @@ window.SKYE_DOCS = {
       "example": ".pins [channel]",
       "concurrency": "<MaxConcurrency per=<BucketType.channel: 3> number=1 wait=False>",
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -9685,8 +9646,8 @@ window.SKYE_DOCS = {
       "example": ".poll <content>",
       "concurrency": "<MaxConcurrency per=<BucketType.channel: 3> number=1 wait=False>",
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -9708,13 +9669,13 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "prefix",
           "type": "text",
           "required": true,
-          "description": "New command prefix (1–5 characters).",
+          "description": "New command prefix (1\u20135 characters).",
           "minimum": null,
           "maximum": null,
           "choices": []
@@ -9723,8 +9684,8 @@ window.SKYE_DOCS = {
       "example": ".prefix <prefix>",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -9767,7 +9728,7 @@ window.SKYE_DOCS = {
       "name": "purge",
       "category": "Cleanup",
       "serverOnly": true,
-      "description": "Confirmably delete a bounded number of recent channel messages.",
+      "description": "Immediately delete a bounded number of recent channel messages.",
       "prefix": ".purge [amount=10]",
       "slash": "/cleanup purge",
       "aliases": [
@@ -9805,9 +9766,9 @@ window.SKYE_DOCS = {
       "example": ".purge [amount=10]",
       "concurrency": "<MaxConcurrency per=<BucketType.channel: 3> number=1 wait=False>",
       "notes": [
-        "Confirm cleanup includes older messages. Recent only (faster) skips messages near or beyond Discord’s two-week bulk limit. Recent messages use batches of up to 100; older messages require individual requests. Progress and partial failures are reported, and Discord retry delays are always respected.",
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Message purge commands start immediately without confirmation. Recent messages use batches of up to 100; older messages require individual requests with no added per-message delay. History scanning stops when enough matches are found. Discord.py supports audit-log reasons for bulk deletion, but not individual message deletion. Progress for older-message cleanup and partial failures are reported. The temporary status message is removed after success; failure notices remain visible. Discord retry delays, permissions and shared abuse limits remain enforced.",
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -9851,9 +9812,9 @@ window.SKYE_DOCS = {
       "example": ".purgeafter <message> [amount=50]",
       "concurrency": "<MaxConcurrency per=<BucketType.channel: 3> number=1 wait=False>",
       "notes": [
-        "Confirm cleanup includes older messages. Recent only (faster) skips messages near or beyond Discord’s two-week bulk limit. Recent messages use batches of up to 100; older messages require individual requests. Progress and partial failures are reported, and Discord retry delays are always respected.",
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Message purge commands start immediately without confirmation. Recent messages use batches of up to 100; older messages require individual requests with no added per-message delay. History scanning stops when enough matches are found. Discord.py supports audit-log reasons for bulk deletion, but not individual message deletion. Progress for older-message cleanup and partial failures are reported. The temporary status message is removed after success; failure notices remain visible. Discord retry delays, permissions and shared abuse limits remain enforced.",
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -9897,16 +9858,16 @@ window.SKYE_DOCS = {
       "example": ".purgebefore <message> [amount=50]",
       "concurrency": "<MaxConcurrency per=<BucketType.channel: 3> number=1 wait=False>",
       "notes": [
-        "Confirm cleanup includes older messages. Recent only (faster) skips messages near or beyond Discord’s two-week bulk limit. Recent messages use batches of up to 100; older messages require individual requests. Progress and partial failures are reported, and Discord retry delays are always respected.",
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Message purge commands start immediately without confirmation. Recent messages use batches of up to 100; older messages require individual requests with no added per-message delay. History scanning stops when enough matches are found. Discord.py supports audit-log reasons for bulk deletion, but not individual message deletion. Progress for older-message cleanup and partial failures are reported. The temporary status message is removed after success; failure notices remain visible. Discord retry delays, permissions and shared abuse limits remain enforced.",
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
       "name": "purgebots",
       "category": "Cleanup",
       "serverOnly": true,
-      "description": "Confirmably remove a bounded number of bot-authored messages.",
+      "description": "Immediately remove a bounded number of bot-authored messages.",
       "prefix": ".purgebots [amount=20]",
       "slash": "/cleanup purgebots",
       "aliases": [],
@@ -9934,16 +9895,16 @@ window.SKYE_DOCS = {
       "example": ".purgebots [amount=20]",
       "concurrency": "<MaxConcurrency per=<BucketType.channel: 3> number=1 wait=False>",
       "notes": [
-        "Confirm cleanup includes older messages. Recent only (faster) skips messages near or beyond Discord’s two-week bulk limit. Recent messages use batches of up to 100; older messages require individual requests. Progress and partial failures are reported, and Discord retry delays are always respected.",
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Message purge commands start immediately without confirmation. Recent messages use batches of up to 100; older messages require individual requests with no added per-message delay. History scanning stops when enough matches are found. Discord.py supports audit-log reasons for bulk deletion, but not individual message deletion. Progress for older-message cleanup and partial failures are reported. The temporary status message is removed after success; failure notices remain visible. Discord retry delays, permissions and shared abuse limits remain enforced.",
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
       "name": "purgecommands",
       "category": "Cleanup",
       "serverOnly": true,
-      "description": "Confirmably remove bounded prefix or mention command invocations.",
+      "description": "Immediately remove bounded prefix or mention command invocations.",
       "prefix": ".purgecommands [amount=20]",
       "slash": "/cleanup purgecommands",
       "aliases": [],
@@ -9971,16 +9932,16 @@ window.SKYE_DOCS = {
       "example": ".purgecommands [amount=20]",
       "concurrency": "<MaxConcurrency per=<BucketType.channel: 3> number=1 wait=False>",
       "notes": [
-        "Confirm cleanup includes older messages. Recent only (faster) skips messages near or beyond Discord’s two-week bulk limit. Recent messages use batches of up to 100; older messages require individual requests. Progress and partial failures are reported, and Discord retry delays are always respected.",
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Message purge commands start immediately without confirmation. Recent messages use batches of up to 100; older messages require individual requests with no added per-message delay. History scanning stops when enough matches are found. Discord.py supports audit-log reasons for bulk deletion, but not individual message deletion. Progress for older-message cleanup and partial failures are reported. The temporary status message is removed after success; failure notices remain visible. Discord retry delays, permissions and shared abuse limits remain enforced.",
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
       "name": "purgeembeds",
       "category": "Cleanup",
       "serverOnly": true,
-      "description": "Confirmably remove bounded messages containing embeds.",
+      "description": "Immediately remove bounded messages containing embeds.",
       "prefix": ".purgeembeds [amount=20]",
       "slash": "/cleanup purgeembeds",
       "aliases": [],
@@ -10008,16 +9969,16 @@ window.SKYE_DOCS = {
       "example": ".purgeembeds [amount=20]",
       "concurrency": "<MaxConcurrency per=<BucketType.channel: 3> number=1 wait=False>",
       "notes": [
-        "Confirm cleanup includes older messages. Recent only (faster) skips messages near or beyond Discord’s two-week bulk limit. Recent messages use batches of up to 100; older messages require individual requests. Progress and partial failures are reported, and Discord retry delays are always respected.",
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Message purge commands start immediately without confirmation. Recent messages use batches of up to 100; older messages require individual requests with no added per-message delay. History scanning stops when enough matches are found. Discord.py supports audit-log reasons for bulk deletion, but not individual message deletion. Progress for older-message cleanup and partial failures are reported. The temporary status message is removed after success; failure notices remain visible. Discord retry delays, permissions and shared abuse limits remain enforced.",
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
       "name": "purgefiles",
       "category": "Cleanup",
       "serverOnly": true,
-      "description": "Confirmably remove bounded non-image file attachments.",
+      "description": "Immediately remove bounded non-image file attachments.",
       "prefix": ".purgefiles [amount=20]",
       "slash": "/cleanup purgefiles",
       "aliases": [
@@ -10049,16 +10010,16 @@ window.SKYE_DOCS = {
       "example": ".purgefiles [amount=20]",
       "concurrency": "<MaxConcurrency per=<BucketType.channel: 3> number=1 wait=False>",
       "notes": [
-        "Confirm cleanup includes older messages. Recent only (faster) skips messages near or beyond Discord’s two-week bulk limit. Recent messages use batches of up to 100; older messages require individual requests. Progress and partial failures are reported, and Discord retry delays are always respected.",
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Message purge commands start immediately without confirmation. Recent messages use batches of up to 100; older messages require individual requests with no added per-message delay. History scanning stops when enough matches are found. Discord.py supports audit-log reasons for bulk deletion, but not individual message deletion. Progress for older-message cleanup and partial failures are reported. The temporary status message is removed after success; failure notices remain visible. Discord retry delays, permissions and shared abuse limits remain enforced.",
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
       "name": "purgefilter",
       "category": "Cleanup",
       "serverOnly": true,
-      "description": "Confirmably delete bounded matching messages using safe user, content, or metadata filters.",
+      "description": "Immediately delete bounded matching messages using safe user, content, or metadata filters.",
       "prefix": ".purgefilter",
       "slash": "/purgefilter overview",
       "aliases": [
@@ -10081,16 +10042,17 @@ window.SKYE_DOCS = {
       "example": ".purgefilter",
       "concurrency": "<MaxConcurrency per=<BucketType.channel: 3> number=1 wait=False>",
       "notes": [
-        "Confirm cleanup includes older messages. Recent only (faster) skips messages near or beyond Discord’s two-week bulk limit. Recent messages use batches of up to 100; older messages require individual requests. Progress and partial failures are reported, and Discord retry delays are always respected.",
+        "Message purge commands start immediately without confirmation. Recent messages use batches of up to 100; older messages require individual requests with no added per-message delay. History scanning stops when enough matches are found. Discord.py supports audit-log reasons for bulk deletion, but not individual message deletion. Progress for older-message cleanup and partial failures are reported. The temporary status message is removed after success; failure notices remain visible. Discord retry delays, permissions and shared abuse limits remain enforced.",
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "`.purgefilter attachments [amount=20]`\n`.purgefilter bots [amount=20]`\n`.purgefilter contains <amount> <text>`\n`.purgefilter humans [amount=20]`\n`.purgefilter links [amount=20]`\n`.purgefilter reactions [amount=20]`\n`.purgefilter user <member> [amount=20]`"
       ]
     },
     {
       "name": "purgefilter attachments",
       "category": "Cleanup",
       "serverOnly": true,
-      "description": "Confirmably delete bounded recent messages containing attached files.",
+      "description": "Immediately delete bounded recent messages containing attached files.",
       "prefix": ".purgefilter attachments [amount=20]",
       "slash": "/purgefilter attachments",
       "aliases": [
@@ -10114,7 +10076,7 @@ window.SKYE_DOCS = {
         "Read Message History (channel)"
       ],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "amount",
@@ -10130,16 +10092,16 @@ window.SKYE_DOCS = {
       "example": ".purgefilter attachments [amount=20]",
       "concurrency": null,
       "notes": [
-        "Confirm cleanup includes older messages. Recent only (faster) skips messages near or beyond Discord’s two-week bulk limit. Recent messages use batches of up to 100; older messages require individual requests. Progress and partial failures are reported, and Discord retry delays are always respected.",
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Message purge commands start immediately without confirmation. Recent messages use batches of up to 100; older messages require individual requests with no added per-message delay. History scanning stops when enough matches are found. Discord.py supports audit-log reasons for bulk deletion, but not individual message deletion. Progress for older-message cleanup and partial failures are reported. The temporary status message is removed after success; failure notices remain visible. Discord retry delays, permissions and shared abuse limits remain enforced.",
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
       "name": "purgefilter bots",
       "category": "Cleanup",
       "serverOnly": true,
-      "description": "Confirmably delete bounded recent messages sent by bots.",
+      "description": "Immediately delete bounded recent messages sent by bots.",
       "prefix": ".purgefilter bots [amount=20]",
       "slash": "/purgefilter bots",
       "aliases": [],
@@ -10159,7 +10121,7 @@ window.SKYE_DOCS = {
         "Read Message History (channel)"
       ],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "amount",
@@ -10175,16 +10137,16 @@ window.SKYE_DOCS = {
       "example": ".purgefilter bots [amount=20]",
       "concurrency": null,
       "notes": [
-        "Confirm cleanup includes older messages. Recent only (faster) skips messages near or beyond Discord’s two-week bulk limit. Recent messages use batches of up to 100; older messages require individual requests. Progress and partial failures are reported, and Discord retry delays are always respected.",
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Message purge commands start immediately without confirmation. Recent messages use batches of up to 100; older messages require individual requests with no added per-message delay. History scanning stops when enough matches are found. Discord.py supports audit-log reasons for bulk deletion, but not individual message deletion. Progress for older-message cleanup and partial failures are reported. The temporary status message is removed after success; failure notices remain visible. Discord retry delays, permissions and shared abuse limits remain enforced.",
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
       "name": "purgefilter contains",
       "category": "Cleanup",
       "serverOnly": true,
-      "description": "Confirmably delete recent messages containing a validated text fragment.",
+      "description": "Immediately delete recent messages containing a validated text fragment.",
       "prefix": ".purgefilter contains <amount> <text>",
       "slash": "/purgefilter contains",
       "aliases": [
@@ -10208,7 +10170,7 @@ window.SKYE_DOCS = {
         "Read Message History (channel)"
       ],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "amount",
@@ -10232,16 +10194,16 @@ window.SKYE_DOCS = {
       "example": ".purgefilter contains <amount> <text>",
       "concurrency": null,
       "notes": [
-        "Confirm cleanup includes older messages. Recent only (faster) skips messages near or beyond Discord’s two-week bulk limit. Recent messages use batches of up to 100; older messages require individual requests. Progress and partial failures are reported, and Discord retry delays are always respected.",
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Message purge commands start immediately without confirmation. Recent messages use batches of up to 100; older messages require individual requests with no added per-message delay. History scanning stops when enough matches are found. Discord.py supports audit-log reasons for bulk deletion, but not individual message deletion. Progress for older-message cleanup and partial failures are reported. The temporary status message is removed after success; failure notices remain visible. Discord retry delays, permissions and shared abuse limits remain enforced.",
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
       "name": "purgefilter humans",
       "category": "Cleanup",
       "serverOnly": true,
-      "description": "Confirmably delete bounded recent messages sent by human accounts.",
+      "description": "Immediately delete bounded recent messages sent by human accounts.",
       "prefix": ".purgefilter humans [amount=20]",
       "slash": "/purgefilter humans",
       "aliases": [],
@@ -10261,7 +10223,7 @@ window.SKYE_DOCS = {
         "Read Message History (channel)"
       ],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "amount",
@@ -10277,16 +10239,16 @@ window.SKYE_DOCS = {
       "example": ".purgefilter humans [amount=20]",
       "concurrency": null,
       "notes": [
-        "Confirm cleanup includes older messages. Recent only (faster) skips messages near or beyond Discord’s two-week bulk limit. Recent messages use batches of up to 100; older messages require individual requests. Progress and partial failures are reported, and Discord retry delays are always respected.",
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Message purge commands start immediately without confirmation. Recent messages use batches of up to 100; older messages require individual requests with no added per-message delay. History scanning stops when enough matches are found. Discord.py supports audit-log reasons for bulk deletion, but not individual message deletion. Progress for older-message cleanup and partial failures are reported. The temporary status message is removed after success; failure notices remain visible. Discord retry delays, permissions and shared abuse limits remain enforced.",
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
       "name": "purgefilter links",
       "category": "Cleanup",
       "serverOnly": true,
-      "description": "Confirmably delete bounded recent messages containing HTTP or HTTPS links.",
+      "description": "Immediately delete bounded recent messages containing HTTP or HTTPS links.",
       "prefix": ".purgefilter links [amount=20]",
       "slash": "/purgefilter links",
       "aliases": [],
@@ -10306,7 +10268,7 @@ window.SKYE_DOCS = {
         "Read Message History (channel)"
       ],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "amount",
@@ -10322,16 +10284,16 @@ window.SKYE_DOCS = {
       "example": ".purgefilter links [amount=20]",
       "concurrency": null,
       "notes": [
-        "Confirm cleanup includes older messages. Recent only (faster) skips messages near or beyond Discord’s two-week bulk limit. Recent messages use batches of up to 100; older messages require individual requests. Progress and partial failures are reported, and Discord retry delays are always respected.",
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Message purge commands start immediately without confirmation. Recent messages use batches of up to 100; older messages require individual requests with no added per-message delay. History scanning stops when enough matches are found. Discord.py supports audit-log reasons for bulk deletion, but not individual message deletion. Progress for older-message cleanup and partial failures are reported. The temporary status message is removed after success; failure notices remain visible. Discord retry delays, permissions and shared abuse limits remain enforced.",
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
       "name": "purgefilter reactions",
       "category": "Cleanup",
       "serverOnly": true,
-      "description": "Confirmably delete bounded recent messages that have reactions.",
+      "description": "Immediately delete bounded recent messages that have reactions.",
       "prefix": ".purgefilter reactions [amount=20]",
       "slash": "/purgefilter reactions",
       "aliases": [],
@@ -10351,7 +10313,7 @@ window.SKYE_DOCS = {
         "Read Message History (channel)"
       ],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "amount",
@@ -10367,16 +10329,16 @@ window.SKYE_DOCS = {
       "example": ".purgefilter reactions [amount=20]",
       "concurrency": null,
       "notes": [
-        "Confirm cleanup includes older messages. Recent only (faster) skips messages near or beyond Discord’s two-week bulk limit. Recent messages use batches of up to 100; older messages require individual requests. Progress and partial failures are reported, and Discord retry delays are always respected.",
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Message purge commands start immediately without confirmation. Recent messages use batches of up to 100; older messages require individual requests with no added per-message delay. History scanning stops when enough matches are found. Discord.py supports audit-log reasons for bulk deletion, but not individual message deletion. Progress for older-message cleanup and partial failures are reported. The temporary status message is removed after success; failure notices remain visible. Discord retry delays, permissions and shared abuse limits remain enforced.",
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
       "name": "purgefilter user",
       "category": "Cleanup",
       "serverOnly": true,
-      "description": "Confirmably delete bounded recent messages from one current member.",
+      "description": "Immediately delete bounded recent messages from one current member.",
       "prefix": ".purgefilter user <member> [amount=20]",
       "slash": "/purgefilter user",
       "aliases": [
@@ -10400,7 +10362,7 @@ window.SKYE_DOCS = {
         "Read Message History (channel)"
       ],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "member",
@@ -10425,17 +10387,17 @@ window.SKYE_DOCS = {
       "example": ".purgefilter user <member> [amount=20]",
       "concurrency": null,
       "notes": [
-        "Confirm cleanup includes older messages. Recent only (faster) skips messages near or beyond Discord’s two-week bulk limit. Recent messages use batches of up to 100; older messages require individual requests. Progress and partial failures are reported, and Discord retry delays are always respected.",
+        "Message purge commands start immediately without confirmation. Recent messages use batches of up to 100; older messages require individual requests with no added per-message delay. History scanning stops when enough matches are found. Discord.py supports audit-log reasons for bulk deletion, but not individual message deletion. Progress for older-message cleanup and partial failures are reported. The temporary status message is removed after success; failure notices remain visible. Discord retry delays, permissions and shared abuse limits remain enforced.",
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
       "name": "purgeimages",
       "category": "Cleanup",
       "serverOnly": true,
-      "description": "Confirmably remove bounded image attachments and image embeds.",
+      "description": "Immediately remove bounded image attachments and image embeds.",
       "prefix": ".purgeimages [amount=20]",
       "slash": "/cleanup purgeimages",
       "aliases": [],
@@ -10463,16 +10425,16 @@ window.SKYE_DOCS = {
       "example": ".purgeimages [amount=20]",
       "concurrency": "<MaxConcurrency per=<BucketType.channel: 3> number=1 wait=False>",
       "notes": [
-        "Confirm cleanup includes older messages. Recent only (faster) skips messages near or beyond Discord’s two-week bulk limit. Recent messages use batches of up to 100; older messages require individual requests. Progress and partial failures are reported, and Discord retry delays are always respected.",
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Message purge commands start immediately without confirmation. Recent messages use batches of up to 100; older messages require individual requests with no added per-message delay. History scanning stops when enough matches are found. Discord.py supports audit-log reasons for bulk deletion, but not individual message deletion. Progress for older-message cleanup and partial failures are reported. The temporary status message is removed after success; failure notices remain visible. Discord retry delays, permissions and shared abuse limits remain enforced.",
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
       "name": "purgeinvites",
       "category": "Cleanup",
       "serverOnly": true,
-      "description": "Confirmably remove bounded messages containing Discord invites.",
+      "description": "Immediately remove bounded messages containing Discord invites.",
       "prefix": ".purgeinvites [amount=20]",
       "slash": "/cleanup purgeinvites",
       "aliases": [],
@@ -10500,16 +10462,16 @@ window.SKYE_DOCS = {
       "example": ".purgeinvites [amount=20]",
       "concurrency": "<MaxConcurrency per=<BucketType.channel: 3> number=1 wait=False>",
       "notes": [
-        "Confirm cleanup includes older messages. Recent only (faster) skips messages near or beyond Discord’s two-week bulk limit. Recent messages use batches of up to 100; older messages require individual requests. Progress and partial failures are reported, and Discord retry delays are always respected.",
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Message purge commands start immediately without confirmation. Recent messages use batches of up to 100; older messages require individual requests with no added per-message delay. History scanning stops when enough matches are found. Discord.py supports audit-log reasons for bulk deletion, but not individual message deletion. Progress for older-message cleanup and partial failures are reported. The temporary status message is removed after success; failure notices remain visible. Discord retry delays, permissions and shared abuse limits remain enforced.",
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
       "name": "purgelinks",
       "category": "Cleanup",
       "serverOnly": true,
-      "description": "Confirmably remove bounded messages containing HTTP links.",
+      "description": "Immediately remove bounded messages containing HTTP links.",
       "prefix": ".purgelinks [amount=20]",
       "slash": "/cleanup purgelinks",
       "aliases": [],
@@ -10537,16 +10499,16 @@ window.SKYE_DOCS = {
       "example": ".purgelinks [amount=20]",
       "concurrency": "<MaxConcurrency per=<BucketType.channel: 3> number=1 wait=False>",
       "notes": [
-        "Confirm cleanup includes older messages. Recent only (faster) skips messages near or beyond Discord’s two-week bulk limit. Recent messages use batches of up to 100; older messages require individual requests. Progress and partial failures are reported, and Discord retry delays are always respected.",
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Message purge commands start immediately without confirmation. Recent messages use batches of up to 100; older messages require individual requests with no added per-message delay. History scanning stops when enough matches are found. Discord.py supports audit-log reasons for bulk deletion, but not individual message deletion. Progress for older-message cleanup and partial failures are reported. The temporary status message is removed after success; failure notices remain visible. Discord retry delays, permissions and shared abuse limits remain enforced.",
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
       "name": "purgeusers",
       "category": "Cleanup",
       "serverOnly": true,
-      "description": "Confirmably remove a bounded number of human-authored messages.",
+      "description": "Immediately remove a bounded number of human-authored messages.",
       "prefix": ".purgeusers [amount=20]",
       "slash": "/cleanup purgeusers",
       "aliases": [
@@ -10578,9 +10540,9 @@ window.SKYE_DOCS = {
       "example": ".purgeusers [amount=20]",
       "concurrency": "<MaxConcurrency per=<BucketType.channel: 3> number=1 wait=False>",
       "notes": [
-        "Confirm cleanup includes older messages. Recent only (faster) skips messages near or beyond Discord’s two-week bulk limit. Recent messages use batches of up to 100; older messages require individual requests. Progress and partial failures are reported, and Discord retry delays are always respected.",
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Message purge commands start immediately without confirmation. Recent messages use batches of up to 100; older messages require individual requests with no added per-message delay. History scanning stops when enough matches are found. Discord.py supports audit-log reasons for bulk deletion, but not individual message deletion. Progress for older-message cleanup and partial failures are reported. The temporary status message is removed after success; failure notices remain visible. Discord retry delays, permissions and shared abuse limits remain enforced.",
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -10618,8 +10580,8 @@ window.SKYE_DOCS = {
       "example": ".quote [message]",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -10645,9 +10607,9 @@ window.SKYE_DOCS = {
       "access": "Everyone",
       "botPermissions": [],
       "features": [
-        "leveling"
+        "Enabled feature: leveling"
       ],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "member",
@@ -10663,10 +10625,9 @@ window.SKYE_DOCS = {
       "example": ".rank [member]",
       "concurrency": null,
       "notes": [
+        "Enabled feature: leveling\nServer only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Enabled feature: leveling",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -10704,8 +10665,8 @@ window.SKYE_DOCS = {
       "example": ".reactioninfo [message]",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -10729,7 +10690,7 @@ window.SKYE_DOCS = {
         "Manage Roles (server)"
       ],
       "features": [
-        "server_options"
+        "Enabled feature: server_options"
       ],
       "cooldown": "1 use(s) per 10s; scope: guild",
       "parameters": [
@@ -10764,10 +10725,9 @@ window.SKYE_DOCS = {
       "example": ".reactionrole <message_id> <emoji> <role>",
       "concurrency": "<MaxConcurrency per=<BucketType.guild: 2> number=1 wait=False>",
       "notes": [
+        "Enabled feature: server_options\nServer only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Enabled feature: server_options",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -10795,7 +10755,7 @@ window.SKYE_DOCS = {
       "access": "Everyone",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "duration",
@@ -10821,8 +10781,9 @@ window.SKYE_DOCS = {
       "example": ".reminder [duration] [text]",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "`.reminder cancel <reminder_id>`\n`.reminder clear`\n`.reminder list`\n`.reminder set <duration> <text>`"
       ]
     },
     {
@@ -10857,13 +10818,13 @@ window.SKYE_DOCS = {
       "access": "Everyone",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "reminder_id",
           "type": "text",
           "required": true,
-          "description": "Value for reminder id.",
+          "description": "",
           "minimum": null,
           "maximum": null,
           "choices": []
@@ -10872,8 +10833,8 @@ window.SKYE_DOCS = {
       "example": ".reminder cancel <reminder_id>",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -10906,13 +10867,13 @@ window.SKYE_DOCS = {
       "access": "Everyone",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".reminder clear",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -10947,13 +10908,13 @@ window.SKYE_DOCS = {
       "access": "Everyone",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".reminder list",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -11010,8 +10971,8 @@ window.SKYE_DOCS = {
       "example": ".reminder set <duration> <text>",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -11058,9 +11019,9 @@ window.SKYE_DOCS = {
       "example": ".rename [channel] <name>",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -11086,16 +11047,15 @@ window.SKYE_DOCS = {
       "access": "Everyone",
       "botPermissions": [],
       "features": [
-        "economy"
+        "Enabled feature: economy"
       ],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".richest",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Enabled feature: economy",
-        "Server only"
+        "Enabled feature: economy\nServer only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -11131,9 +11091,10 @@ window.SKYE_DOCS = {
       "example": ".role [member]",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
         "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "`.role add <member> <role>`\n`.role remove <member> <role>`"
       ]
     },
     {
@@ -11164,7 +11125,7 @@ window.SKYE_DOCS = {
         "Manage Roles (server)"
       ],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "member",
@@ -11188,9 +11149,10 @@ window.SKYE_DOCS = {
       "example": ".role add <member> <role>",
       "concurrency": null,
       "notes": [
+        "Server only",
+        "Current caller/bot permissions, target membership and role hierarchy are fetched before changes. Grants also check current channel overwrites and only allow cosmetic roles. If verification fails, no role change is attempted.",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -11221,7 +11183,7 @@ window.SKYE_DOCS = {
         "Manage Roles (server)"
       ],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "member",
@@ -11245,9 +11207,10 @@ window.SKYE_DOCS = {
       "example": ".role remove <member> <role>",
       "concurrency": null,
       "notes": [
+        "Server only",
+        "Current caller/bot permissions, target membership and role hierarchy are fetched before changes. Grants also check current channel overwrites and only allow cosmetic roles. If verification fails, no role change is attempted.",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -11286,16 +11249,16 @@ window.SKYE_DOCS = {
       "example": ".roleinfo <role>",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
       "name": "roulette",
       "category": "Economy",
       "serverOnly": true,
-      "description": "Roulette: green/exact numbers 36×, colors/parity/low/high 2×, dozens/columns 3×. Use roulette rules for details.",
+      "description": "Roulette: green/exact numbers 36\u00d7, colors/parity/low/high 2\u00d7, dozens/columns 3\u00d7. Use roulette rules for details.",
       "prefix": ".roulette <wager> [bet]",
       "slash": "/economy roulette",
       "aliases": [
@@ -11310,7 +11273,7 @@ window.SKYE_DOCS = {
       "access": "Everyone",
       "botPermissions": [],
       "features": [
-        "economy"
+        "Enabled feature: economy"
       ],
       "cooldown": "1 use(s) per 8s; scope: member",
       "parameters": [
@@ -11337,11 +11300,11 @@ window.SKYE_DOCS = {
       "example": ".roulette <wager> [bet]",
       "concurrency": null,
       "notes": [
-        "Single-zero wheel (0–36). Green or exact number: 36× return. Red/black, odd/even, low (1–18), high (19–36): 2×. dozen1/2/3 and column1/2/3: 3×. Zero loses all non-green/non-zero bets.",
-        "Virtual server currency only. Use 1–100,000 or all; payouts include the stake. Interactive games cannot resume after a process restart.",
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Enabled feature: economy",
-        "Server only"
+        "Single-zero wheel (0\u201336). Green or exact number: 36\u00d7 return. Red/black, odd/even, low (1\u201318), high (19\u201336): 2\u00d7. dozen1/2/3 and column1/2/3: 3\u00d7. Zero loses all non-green/non-zero bets.",
+        "Virtual server currency only. Use 1\u2013100,000 or all; payouts include the stake. Interactive games cannot resume after a process restart.",
+        "`.roulette rules` \u00b7 Read these details without playing using `.help roulette`.",
+        "Enabled feature: economy\nServer only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -11379,9 +11342,9 @@ window.SKYE_DOCS = {
       "example": ".rps [opponent]",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -11420,8 +11383,8 @@ window.SKYE_DOCS = {
       "example": ".say <message>",
       "concurrency": "<MaxConcurrency per=<BucketType.member: 4> number=1 wait=False>",
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -11452,9 +11415,9 @@ window.SKYE_DOCS = {
       "example": ".scamcatcher",
       "concurrency": "<MaxConcurrency per=<BucketType.guild: 2> number=1 wait=False>",
       "notes": [
+        "Server only\nSetup arms an automatic kick-and-delete trap; stats/history are private and require Manage Server.",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only",
-        "Setup arms an automatic kick-and-delete trap; stats/history are private and require Manage Server."
+        "`.scamcatcher disable`\n`.scamcatcher history [page=1] [user]`\n`.scamcatcher kicked [page=1] [user]`\n`.scamcatcher stats`\n`.scamcatcher status`"
       ]
     },
     {
@@ -11485,14 +11448,13 @@ window.SKYE_DOCS = {
         "Setup: Manage Channels, Kick Members, Manage Messages, View Channel, Send Messages and Read Message History"
       ],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".scamcatcher disable",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only",
-        "Setup arms an automatic kick-and-delete trap; stats/history are private and require Manage Server."
+        "Server only\nSetup arms an automatic kick-and-delete trap; stats/history are private and require Manage Server.",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -11529,7 +11491,7 @@ window.SKYE_DOCS = {
           "name": "page",
           "type": "integer (minimum 1, maximum 1000000)",
           "required": false,
-          "description": "Value for page.",
+          "description": "",
           "minimum": 1,
           "maximum": 1000000,
           "choices": [],
@@ -11549,10 +11511,9 @@ window.SKYE_DOCS = {
       "example": ".scamcatcher history [page=1] [user]",
       "concurrency": null,
       "notes": [
+        "Server only\nSetup arms an automatic kick-and-delete trap; stats/history are private and require Manage Server.",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only",
-        "Setup arms an automatic kick-and-delete trap; stats/history are private and require Manage Server."
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -11591,7 +11552,7 @@ window.SKYE_DOCS = {
           "name": "page",
           "type": "integer (minimum 1, maximum 1000000)",
           "required": false,
-          "description": "Value for page.",
+          "description": "",
           "minimum": 1,
           "maximum": 1000000,
           "choices": [],
@@ -11611,10 +11572,9 @@ window.SKYE_DOCS = {
       "example": ".scamcatcher kicked [page=1] [user]",
       "concurrency": null,
       "notes": [
+        "Server only\nSetup arms an automatic kick-and-delete trap; stats/history are private and require Manage Server.",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only",
-        "Setup arms an automatic kick-and-delete trap; stats/history are private and require Manage Server."
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -11650,9 +11610,8 @@ window.SKYE_DOCS = {
       "example": ".scamcatcher stats",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only",
-        "Setup arms an automatic kick-and-delete trap; stats/history are private and require Manage Server."
+        "Server only\nSetup arms an automatic kick-and-delete trap; stats/history are private and require Manage Server.",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -11679,14 +11638,13 @@ window.SKYE_DOCS = {
         "Setup: Manage Channels, Kick Members, Manage Messages, View Channel, Send Messages and Read Message History"
       ],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".scamcatcher status",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only",
-        "Setup arms an automatic kick-and-delete trap; stats/history are private and require Manage Server."
+        "Server only\nSetup arms an automatic kick-and-delete trap; stats/history are private and require Manage Server.",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -11713,8 +11671,8 @@ window.SKYE_DOCS = {
       "example": ".scramble",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -11762,8 +11720,8 @@ window.SKYE_DOCS = {
       "example": ".serverbanner [url] [attachment (upload a file)]",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -11790,8 +11748,8 @@ window.SKYE_DOCS = {
       "example": ".serverboosts",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -11815,13 +11773,14 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".serverconfig",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "`.serverconfig autoresponse <action> <trigger> [response]`\n`.serverconfig autorole <action> <role>`\n`.serverconfig boost <channel> [message=\ud83c\udfb5 Thank you {mention} for boosting {server}! \ud83d\udc99]`\n`.serverconfig boostoff`\n`.serverconfig customcommand <action> <name> [response]`\n`.serverconfig leave <channel> [message={user} has left {server}.]`\n`.serverconfig leaveoff`\n`.serverconfig placeholders [message_type=welcome]`\n`.serverconfig preview [message_type=welcome] [message]`\n`.serverconfig removebutton <message_id>`\n`.serverconfig removereaction <message_id> <emoji>`\n`.serverconfig timezone <timezone>`\n`.serverconfig welcome <channel> [message=Welcome {mention} to {server}!]`\n`.serverconfig welcomeoff`"
       ]
     },
     {
@@ -11850,7 +11809,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "action",
@@ -11865,7 +11824,7 @@ window.SKYE_DOCS = {
           "name": "trigger",
           "type": "text",
           "required": true,
-          "description": "Value for trigger.",
+          "description": "",
           "minimum": null,
           "maximum": null,
           "choices": []
@@ -11884,8 +11843,8 @@ window.SKYE_DOCS = {
       "example": ".serverconfig autoresponse <action> <trigger> [response]",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -11912,7 +11871,7 @@ window.SKYE_DOCS = {
         "Manage Roles (server)"
       ],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "action",
@@ -11936,9 +11895,9 @@ window.SKYE_DOCS = {
       "example": ".serverconfig autorole <action> <role>",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -11946,7 +11905,7 @@ window.SKYE_DOCS = {
       "category": "Server Setup",
       "serverOnly": true,
       "description": "Set boost announcements alongside welcome/leave. Requires server_options and visible Discord boost system messages. Use serverconfig placeholders boost for all supported placeholders.",
-      "prefix": ".serverconfig boost <channel> [message=🎵 Thank you {mention} for boosting {server}! 💙]",
+      "prefix": ".serverconfig boost <channel> [message=\ud83c\udfb5 Thank you {mention} for boosting {server}! \ud83d\udc99]",
       "slash": "/boostmessages setup",
       "aliases": [
         ".serverconfig boostmessage"
@@ -11967,7 +11926,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "channel",
@@ -11986,15 +11945,15 @@ window.SKYE_DOCS = {
           "minimum": null,
           "maximum": null,
           "choices": [],
-          "default": "🎵 Thank you {mention} for boosting {server}! 💙"
+          "default": "\ud83c\udfb5 Thank you {mention} for boosting {server}! \ud83d\udc99"
         }
       ],
-      "example": ".serverconfig boost <channel> [message=🎵 Thank you {mention} for boosting {server}! 💙]",
+      "example": ".serverconfig boost <channel> [message=\ud83c\udfb5 Thank you {mention} for boosting {server}! \ud83d\udc99]",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -12023,13 +11982,13 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".serverconfig boostoff",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -12060,7 +12019,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "action",
@@ -12094,8 +12053,8 @@ window.SKYE_DOCS = {
       "example": ".serverconfig customcommand <action> <name> [response]",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -12120,7 +12079,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "channel",
@@ -12145,9 +12104,9 @@ window.SKYE_DOCS = {
       "example": ".serverconfig leave <channel> [message={user} has left {server}.]",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -12176,20 +12135,20 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".serverconfig leaveoff",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
       "name": "serverconfig placeholders",
       "category": "Server Setup",
       "serverOnly": true,
-      "description": "List supported placeholders per type: welcome, leave, boost, autoresponse, customcommand.",
+      "description": "List placeholders for welcome, leave, boost, autoresponse, customcommand and ticket messages.",
       "prefix": ".serverconfig placeholders [message_type=welcome]",
       "slash": "/automation placeholders",
       "aliases": [],
@@ -12207,13 +12166,13 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "message_type",
           "type": "text",
           "required": false,
-          "description": "Value for message type.",
+          "description": "",
           "minimum": null,
           "maximum": null,
           "choices": [
@@ -12221,7 +12180,8 @@ window.SKYE_DOCS = {
             "leave",
             "boost",
             "autoresponse",
-            "customcommand"
+            "customcommand",
+            "ticket"
           ],
           "default": "welcome"
         }
@@ -12229,8 +12189,65 @@ window.SKYE_DOCS = {
       "example": ".serverconfig placeholders [message_type=welcome]",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
+      ]
+    },
+    {
+      "name": "serverconfig preview",
+      "category": "Server Setup",
+      "serverOnly": true,
+      "description": "Privately preview saved welcome, goodbye or boost messages, or an unsaved draft.",
+      "prefix": ".serverconfig preview [message_type=welcome] [message]",
+      "slash": "/automation preview",
+      "aliases": [],
+      "searchAliases": [],
+      "parentAliases": [
+        {
+          "name": "serverconfig",
+          "aliases": [
+            "serveroptions",
+            "serveropts",
+            "sconfig"
+          ]
+        }
+      ],
+      "access": "Administrator (server)",
+      "botPermissions": [],
+      "features": [],
+      "cooldown": null,
+      "parameters": [
+        {
+          "name": "message_type",
+          "type": "text",
+          "required": false,
+          "description": "",
+          "minimum": null,
+          "maximum": null,
+          "choices": [
+            "welcome",
+            "leave",
+            "boost"
+          ],
+          "default": "welcome"
+        },
+        {
+          "name": "message",
+          "type": "text",
+          "required": false,
+          "description": "Message text, ID, or Discord message link.",
+          "minimum": null,
+          "maximum": null,
+          "choices": [],
+          "default": "not set"
+        }
+      ],
+      "example": ".serverconfig preview welcome",
+      "concurrency": null,
+      "notes": [
+        "Preview your saved welcome, leave or boost message with you as the sample member, or provide an unsaved draft. Delivery is private and mention pings are disabled. The preview does not change configuration or publish in the announcement channel.",
+        "Administrator; preview is private and does not publish or change settings.\nServer only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -12255,7 +12272,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "message_id",
@@ -12270,8 +12287,8 @@ window.SKYE_DOCS = {
       "example": ".serverconfig removebutton <message_id>",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -12296,7 +12313,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "message_id",
@@ -12320,8 +12337,8 @@ window.SKYE_DOCS = {
       "example": ".serverconfig removereaction <message_id> <emoji>",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -12367,8 +12384,8 @@ window.SKYE_DOCS = {
       "example": ".serverconfig timezone <timezone>",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -12393,7 +12410,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "channel",
@@ -12418,9 +12435,9 @@ window.SKYE_DOCS = {
       "example": ".serverconfig welcome <channel> [message=Welcome {mention} to {server}!]",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -12449,13 +12466,13 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".serverconfig welcomeoff",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -12492,8 +12509,8 @@ window.SKYE_DOCS = {
       "example": ".serverdescription <description>",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -12518,8 +12535,8 @@ window.SKYE_DOCS = {
       "example": ".serveremojis",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -12544,8 +12561,8 @@ window.SKYE_DOCS = {
       "example": ".serverfeatures",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -12593,8 +12610,8 @@ window.SKYE_DOCS = {
       "example": ".servericon [url] [attachment (upload a file)]",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -12629,8 +12646,8 @@ window.SKYE_DOCS = {
       "example": ".serverinfo",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -12665,8 +12682,8 @@ window.SKYE_DOCS = {
       "example": ".servername <name>",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -12691,8 +12708,8 @@ window.SKYE_DOCS = {
       "example": ".serverroles",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -12717,8 +12734,8 @@ window.SKYE_DOCS = {
       "example": ".serverrules",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -12746,9 +12763,8 @@ window.SKYE_DOCS = {
       "concurrency": null,
       "notes": [
         "Use /setup overview for a private wizard, or .serversetup in a staff-only text channel. Choose a section and setting, optionally select channels/roles, then Configure. Each operation uses the original command checks and saves independently. Reopen to resume; Finish shows saved state, not a live delivery guarantee.",
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Only the initiating administrator can use this menu. Anti-nuke owner restrictions still apply.",
-        "Server only"
+        "Only the initiating administrator can use this menu. Anti-nuke owner restrictions still apply.\nServer only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -12773,8 +12789,8 @@ window.SKYE_DOCS = {
       "example": ".serverstats",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -12799,8 +12815,8 @@ window.SKYE_DOCS = {
       "example": ".serverstickers",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -12841,8 +12857,8 @@ window.SKYE_DOCS = {
       "example": ".serververification <level>",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -12862,12 +12878,13 @@ window.SKYE_DOCS = {
       "access": "Whitelist owner (820292272209002526 only)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".serverwhitelist",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
+        "`.serverwhitelist add <server_id>`\n`.serverwhitelist remove <server_id>`"
       ]
     },
     {
@@ -12890,7 +12907,7 @@ window.SKYE_DOCS = {
       "access": "Whitelist owner (820292272209002526 only)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "server_id",
@@ -12928,7 +12945,7 @@ window.SKYE_DOCS = {
       "access": "Whitelist owner (820292272209002526 only)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "server_id",
@@ -12967,7 +12984,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "multiplier",
@@ -12982,8 +12999,8 @@ window.SKYE_DOCS = {
       "example": ".setxprate <multiplier>",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -13030,9 +13047,9 @@ window.SKYE_DOCS = {
       "example": ".sharedroles <member> [other]",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -13062,7 +13079,7 @@ window.SKYE_DOCS = {
       "access": "Everyone",
       "botPermissions": [],
       "features": [
-        "games"
+        "Enabled feature: games"
       ],
       "cooldown": "3 use(s) per 10s; scope: member",
       "parameters": [
@@ -13089,10 +13106,9 @@ window.SKYE_DOCS = {
       "example": ".ship <first> [second]",
       "concurrency": null,
       "notes": [
+        "Enabled feature: games\nServer only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Enabled feature: games",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -13142,9 +13158,9 @@ window.SKYE_DOCS = {
       "example": ".show [channel] [target]",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -13166,13 +13182,14 @@ window.SKYE_DOCS = {
       "access": "Everyone",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".skye",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "`.skye avatar [url] [attachment (upload a file)]`\n`.skye banner [url] [attachment (upload a file)]`\n`.skye color <color>`\n`.skye description <description>`\n`.skye nickname [nickname]`"
       ]
     },
     {
@@ -13228,8 +13245,8 @@ window.SKYE_DOCS = {
       "example": ".skye avatar [url] [attachment (upload a file)]",
       "concurrency": "<MaxConcurrency per=<BucketType.guild: 2> number=1 wait=False>",
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -13283,8 +13300,8 @@ window.SKYE_DOCS = {
       "example": ".skye banner [url] [attachment (upload a file)]",
       "concurrency": "<MaxConcurrency per=<BucketType.guild: 2> number=1 wait=False>",
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -13314,7 +13331,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "color",
@@ -13329,8 +13346,8 @@ window.SKYE_DOCS = {
       "example": ".skye color <color>",
       "concurrency": "<MaxConcurrency per=<BucketType.guild: 2> number=1 wait=False>",
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -13375,8 +13392,8 @@ window.SKYE_DOCS = {
       "example": ".skye description <description>",
       "concurrency": "<MaxConcurrency per=<BucketType.guild: 2> number=1 wait=False>",
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -13408,7 +13425,7 @@ window.SKYE_DOCS = {
         "Change Nickname (server)"
       ],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "nickname",
@@ -13424,8 +13441,8 @@ window.SKYE_DOCS = {
       "example": ".skye nickname [nickname]",
       "concurrency": "<MaxConcurrency per=<BucketType.guild: 2> number=1 wait=False>",
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -13468,7 +13485,7 @@ window.SKYE_DOCS = {
       "name": "slots",
       "category": "Economy",
       "serverOnly": true,
-      "description": "Spin 1–5 paylines; wager is per line. Triples pay 4× (sevens 8×), two cherries return 1×. Use slots rules for payline order and total-stake cap.",
+      "description": "Spin 1\u20135 paylines; wager is per line. Triples pay 4\u00d7 (sevens 8\u00d7), two cherries return 1\u00d7. Use slots rules for payline order and total-stake cap.",
       "prefix": ".slots <wager> [lines=1]",
       "slash": "/economy slots",
       "aliases": [
@@ -13483,7 +13500,7 @@ window.SKYE_DOCS = {
       "access": "Everyone",
       "botPermissions": [],
       "features": [
-        "economy"
+        "Enabled feature: economy"
       ],
       "cooldown": "1 use(s) per 8s; scope: member",
       "parameters": [
@@ -13500,7 +13517,7 @@ window.SKYE_DOCS = {
           "name": "lines",
           "type": "integer (minimum 1, maximum 5)",
           "required": false,
-          "description": "Slot paylines: 1–5. Wager is per line; all splits your available capped budget.",
+          "description": "Slot paylines: 1\u20135. Wager is per line; all splits your available capped budget.",
           "minimum": 1,
           "maximum": 5,
           "choices": [],
@@ -13510,18 +13527,18 @@ window.SKYE_DOCS = {
       "example": ".slots <wager> [lines=1]",
       "concurrency": null,
       "notes": [
-        "Three reels; 1–5 paylines (middle, top, bottom, descending diagonal, ascending diagonal). Wager is PER LINE; total stake cannot exceed 100,000. Three sevens return 8×; any other triple 4×; exactly two cherries return 1×. All returns are per winning line; losing lines pay zero.",
-        "Virtual server currency only. Use 1–100,000 or all; payouts include the stake. Interactive games cannot resume after a process restart.",
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Enabled feature: economy",
-        "Server only"
+        "Three reels; 1\u20135 paylines (middle, top, bottom, descending diagonal, ascending diagonal). Wager is PER LINE; total stake cannot exceed 100,000. Three sevens return 8\u00d7; any other triple 4\u00d7; exactly two cherries return 1\u00d7. All returns are per winning line; losing lines pay zero.",
+        "Virtual server currency only. Use 1\u2013100,000 or all; payouts include the stake. Interactive games cannot resume after a process restart.",
+        "`.slots rules` \u00b7 Read these details without playing using `.help slots`.",
+        "Enabled feature: economy\nServer only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
       "name": "slowmode",
       "category": "Moderation",
       "serverOnly": true,
-      "description": "Set or disable the current channel's slowmode.",
+      "description": "Set channel slowmode; threads also require Manage Threads for you and skye.",
       "prefix": ".slowmode [duration=0]",
       "slash": "/moderation slowmode",
       "aliases": [
@@ -13553,11 +13570,11 @@ window.SKYE_DOCS = {
           "default": "0"
         }
       ],
-      "example": ".slowmode [duration=0]",
+      "example": ".slowmode 10s",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Manage Channels; thread slowmode also requires Manage Threads for both caller and bot.\nServer only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -13595,8 +13612,8 @@ window.SKYE_DOCS = {
       "example": ".snipe [number=1]",
       "concurrency": "<MaxConcurrency per=<BucketType.channel: 3> number=1 wait=False>",
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -13612,7 +13629,7 @@ window.SKYE_DOCS = {
       "access": "Bot application owner",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".stopbot",
       "concurrency": "<MaxConcurrency per=<BucketType.default: 0> number=1 wait=False>",
@@ -13624,7 +13641,7 @@ window.SKYE_DOCS = {
       "name": "ticket",
       "category": "Tickets",
       "serverOnly": false,
-      "description": "Configure and operate private support-ticket panels.",
+      "description": "Configure custom ticket reasons, button/dropdown panels and private support channels.",
       "prefix": ".ticket",
       "slash": "/ticket overview",
       "aliases": [
@@ -13639,12 +13656,15 @@ window.SKYE_DOCS = {
       "access": "Everyone",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".ticket",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
+        "Use ticket setup <panel> \u2192 Customize everything, or ticket edit <panel>. Both open the same editor: button/dropdown mode, up to 25 stable ticket reasons, per-reason descriptions/emoji/opening messages/category/support-role routing, panel and opening text, colors, images, thumbnails, links/icons, fields, timestamps, channel naming and ping controls. Settings persist per server and refresh the posted panel. Use ticket panel <panel> #channel to post or move it.",
+        "Opening messages/embeds share member/server placeholders with welcome/leave/boost, plus {reason}, {number}, {panel}, {support}, {channel}, {channel_id}. Channel names can use the same values except channel placeholders, which are only available after creation. Panel text is static. One open ticket per member, creation cooldowns and private overwrites remain enforced.",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
+        "`.ticket category [panel_name=main] [category]`\n`.ticket delete <panel_name>`\n`.ticket edit [panel_name=main]`\n`.ticket panel [panel_name=main] [channel]`\n`.ticket setup [panel_name=main]`\n`.ticket status [panel_name]`\n`.ticket supportrole [panel_name=main] [role]`"
       ]
     },
     {
@@ -13668,7 +13688,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "panel_name",
@@ -13694,9 +13714,11 @@ window.SKYE_DOCS = {
       "example": ".ticket category [panel_name=main] [category]",
       "concurrency": null,
       "notes": [
+        "Use ticket setup <panel> \u2192 Customize everything, or ticket edit <panel>. Both open the same editor: button/dropdown mode, up to 25 stable ticket reasons, per-reason descriptions/emoji/opening messages/category/support-role routing, panel and opening text, colors, images, thumbnails, links/icons, fields, timestamps, channel naming and ping controls. Settings persist per server and refresh the posted panel. Use ticket panel <panel> #channel to post or move it.",
+        "Opening messages/embeds share member/server placeholders with welcome/leave/boost, plus {reason}, {number}, {panel}, {support}, {channel}, {channel_id}. Channel names can use the same values except channel placeholders, which are only available after creation. Panel text is static. One open ticket per member, creation cooldowns and private overwrites remain enforced.",
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -13724,7 +13746,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "panel_name",
@@ -13739,8 +13761,10 @@ window.SKYE_DOCS = {
       "example": ".ticket delete <panel_name>",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Use ticket setup <panel> \u2192 Customize everything, or ticket edit <panel>. Both open the same editor: button/dropdown mode, up to 25 stable ticket reasons, per-reason descriptions/emoji/opening messages/category/support-role routing, panel and opening text, colors, images, thumbnails, links/icons, fields, timestamps, channel naming and ping controls. Settings persist per server and refresh the posted panel. Use ticket panel <panel> #channel to post or move it.",
+        "Opening messages/embeds share member/server placeholders with welcome/leave/boost, plus {reason}, {number}, {panel}, {support}, {channel}, {channel_id}. Channel names can use the same values except channel placeholders, which are only available after creation. Panel text is static. One open ticket per member, creation cooldowns and private overwrites remain enforced.",
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -13764,7 +13788,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "panel_name",
@@ -13780,8 +13804,10 @@ window.SKYE_DOCS = {
       "example": ".ticket edit [panel_name=main]",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Use ticket setup <panel> \u2192 Customize everything, or ticket edit <panel>. Both open the same editor: button/dropdown mode, up to 25 stable ticket reasons, per-reason descriptions/emoji/opening messages/category/support-role routing, panel and opening text, colors, images, thumbnails, links/icons, fields, timestamps, channel naming and ping controls. Settings persist per server and refresh the posted panel. Use ticket panel <panel> #channel to post or move it.",
+        "Opening messages/embeds share member/server placeholders with welcome/leave/boost, plus {reason}, {number}, {panel}, {support}, {channel}, {channel_id}. Channel names can use the same values except channel placeholders, which are only available after creation. Panel text is static. One open ticket per member, creation cooldowns and private overwrites remain enforced.",
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -13805,7 +13831,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "panel_name",
@@ -13831,9 +13857,11 @@ window.SKYE_DOCS = {
       "example": ".ticket panel [panel_name=main] [channel]",
       "concurrency": null,
       "notes": [
+        "Use ticket setup <panel> \u2192 Customize everything, or ticket edit <panel>. Both open the same editor: button/dropdown mode, up to 25 stable ticket reasons, per-reason descriptions/emoji/opening messages/category/support-role routing, panel and opening text, colors, images, thumbnails, links/icons, fields, timestamps, channel naming and ping controls. Settings persist per server and refresh the posted panel. Use ticket panel <panel> #channel to post or move it.",
+        "Opening messages/embeds share member/server placeholders with welcome/leave/boost, plus {reason}, {number}, {panel}, {support}, {channel}, {channel_id}. Channel names can use the same values except channel placeholders, which are only available after creation. Panel text is static. One open ticket per member, creation cooldowns and private overwrites remain enforced.",
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -13857,7 +13885,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "panel_name",
@@ -13873,8 +13901,10 @@ window.SKYE_DOCS = {
       "example": ".ticket setup [panel_name=main]",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Use ticket setup <panel> \u2192 Customize everything, or ticket edit <panel>. Both open the same editor: button/dropdown mode, up to 25 stable ticket reasons, per-reason descriptions/emoji/opening messages/category/support-role routing, panel and opening text, colors, images, thumbnails, links/icons, fields, timestamps, channel naming and ping controls. Settings persist per server and refresh the posted panel. Use ticket panel <panel> #channel to post or move it.",
+        "Opening messages/embeds share member/server placeholders with welcome/leave/boost, plus {reason}, {number}, {panel}, {support}, {channel}, {channel_id}. Channel names can use the same values except channel placeholders, which are only available after creation. Panel text is static. One open ticket per member, creation cooldowns and private overwrites remain enforced.",
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -13898,7 +13928,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "panel_name",
@@ -13914,8 +13944,10 @@ window.SKYE_DOCS = {
       "example": ".ticket status [panel_name]",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Use ticket setup <panel> \u2192 Customize everything, or ticket edit <panel>. Both open the same editor: button/dropdown mode, up to 25 stable ticket reasons, per-reason descriptions/emoji/opening messages/category/support-role routing, panel and opening text, colors, images, thumbnails, links/icons, fields, timestamps, channel naming and ping controls. Settings persist per server and refresh the posted panel. Use ticket panel <panel> #channel to post or move it.",
+        "Opening messages/embeds share member/server placeholders with welcome/leave/boost, plus {reason}, {number}, {panel}, {support}, {channel}, {channel_id}. Channel names can use the same values except channel placeholders, which are only available after creation. Panel text is static. One open ticket per member, creation cooldowns and private overwrites remain enforced.",
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -13943,7 +13975,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "panel_name",
@@ -13969,9 +14001,11 @@ window.SKYE_DOCS = {
       "example": ".ticket supportrole [panel_name=main] [role]",
       "concurrency": null,
       "notes": [
+        "Use ticket setup <panel> \u2192 Customize everything, or ticket edit <panel>. Both open the same editor: button/dropdown mode, up to 25 stable ticket reasons, per-reason descriptions/emoji/opening messages/category/support-role routing, panel and opening text, colors, images, thumbnails, links/icons, fields, timestamps, channel naming and ping controls. Settings persist per server and refresh the posted panel. Use ticket panel <panel> #channel to post or move it.",
+        "Opening messages/embeds share member/server placeholders with welcome/leave/boost, plus {reason}, {number}, {panel}, {support}, {channel}, {channel_id}. Channel names can use the same values except channel placeholders, which are only available after creation. Panel text is static. One open ticket per member, creation cooldowns and private overwrites remain enforced.",
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -14045,9 +14079,9 @@ window.SKYE_DOCS = {
       "example": ".tictactoe [opponent]",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -14115,7 +14149,7 @@ window.SKYE_DOCS = {
         "Moderate Members (server)"
       ],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "member",
@@ -14149,10 +14183,10 @@ window.SKYE_DOCS = {
       "example": ".timeout <member> <duration> [reason=No reason provided]",
       "concurrency": null,
       "notes": [
-        "Current permissions and hierarchy still apply when using IDs. Reasons are limited to 1–400 characters without control characters. Duration inputs use minutes for bare numbers or s/m/h/d combinations, with a 64-character/ten-year parser limit; timeouts are limited to 28 days. New completed actions retain up to 1,000 server-local cases, visible privately through memberhistory. Cases are not reconstructed for past actions.",
+        "Current permissions and hierarchy still apply when using IDs. Reasons are limited to 1\u2013400 characters without control characters. Duration inputs use minutes for bare numbers or s/m/h/d combinations, with a 64-character/ten-year parser limit; timeouts are limited to 28 days. New completed actions retain up to 1,000 server-local cases, visible privately through memberhistory. Cases are not reconstructed for past actions.",
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -14176,7 +14210,7 @@ window.SKYE_DOCS = {
       "access": "Everyone",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "duration",
@@ -14230,7 +14264,7 @@ window.SKYE_DOCS = {
           "name": "topic",
           "type": "text",
           "required": true,
-          "description": "Value for topic.",
+          "description": "",
           "minimum": null,
           "maximum": null,
           "choices": []
@@ -14239,9 +14273,9 @@ window.SKYE_DOCS = {
       "example": ".topic [channel] <topic>",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -14319,8 +14353,8 @@ window.SKYE_DOCS = {
       "example": ".trivia",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -14340,7 +14374,7 @@ window.SKYE_DOCS = {
       "access": "Everyone",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".truth",
       "concurrency": null,
@@ -14371,7 +14405,7 @@ window.SKYE_DOCS = {
         "Ban Members (server)"
       ],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "user_id",
@@ -14396,9 +14430,9 @@ window.SKYE_DOCS = {
       "example": ".unban 123456789012345678 reason",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -14427,7 +14461,7 @@ window.SKYE_DOCS = {
         "Manage Roles (channel)"
       ],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "reason",
@@ -14443,8 +14477,8 @@ window.SKYE_DOCS = {
       "example": ".unlock [reason=No reason provided]",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -14479,8 +14513,8 @@ window.SKYE_DOCS = {
       "example": ".unpin [message]",
       "concurrency": "<MaxConcurrency per=<BucketType.channel: 3> number=1 wait=False>",
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -14502,7 +14536,7 @@ window.SKYE_DOCS = {
       "access": "Everyone",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "answer",
@@ -14517,8 +14551,8 @@ window.SKYE_DOCS = {
       "example": ".unscramble <answer>",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -14546,7 +14580,7 @@ window.SKYE_DOCS = {
         "Moderate Members (server)"
       ],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "member",
@@ -14571,10 +14605,10 @@ window.SKYE_DOCS = {
       "example": ".untimeout <member> [reason=No reason provided]",
       "concurrency": null,
       "notes": [
-        "Current permissions and hierarchy still apply when using IDs. Reasons are limited to 1–400 characters without control characters. Duration inputs use minutes for bare numbers or s/m/h/d combinations, with a 64-character/ten-year parser limit; timeouts are limited to 28 days. New completed actions retain up to 1,000 server-local cases, visible privately through memberhistory. Cases are not reconstructed for past actions.",
+        "Current permissions and hierarchy still apply when using IDs. Reasons are limited to 1\u2013400 characters without control characters. Duration inputs use minutes for bare numbers or s/m/h/d combinations, with a 64-character/ten-year parser limit; timeouts are limited to 28 days. New completed actions retain up to 1,000 server-local cases, visible privately through memberhistory. Cases are not reconstructed for past actions.",
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -14598,7 +14632,7 @@ window.SKYE_DOCS = {
       "access": "Moderate Members (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "member",
@@ -14632,10 +14666,11 @@ window.SKYE_DOCS = {
       "example": ".unwarn <member> <warning_number> [reason=No reason provided]",
       "concurrency": null,
       "notes": [
-        "Current permissions and hierarchy still apply when using IDs. Reasons are limited to 1–400 characters without control characters. Duration inputs use minutes for bare numbers or s/m/h/d combinations, with a 64-character/ten-year parser limit; timeouts are limited to 28 days. New completed actions retain up to 1,000 server-local cases, visible privately through memberhistory. Cases are not reconstructed for past actions.",
+        "Current permissions and hierarchy still apply when using IDs. Reasons are limited to 1\u2013400 characters without control characters. Duration inputs use minutes for bare numbers or s/m/h/d combinations, with a 64-character/ten-year parser limit; timeouts are limited to 28 days. New completed actions retain up to 1,000 server-local cases, visible privately through memberhistory. Cases are not reconstructed for past actions.",
+        "Server only",
+        "Warning removal results are sent privately by slash response or DM, like other moderation cases.",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -14687,9 +14722,9 @@ window.SKYE_DOCS = {
       "example": ".userinfo [member]",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -14786,9 +14821,9 @@ window.SKYE_DOCS = {
       "example": ".voiceban <member> [channel] [reason=No reason provided]",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -14835,9 +14870,9 @@ window.SKYE_DOCS = {
       "example": ".voicebitrate <kbps> [channel]",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -14864,8 +14899,8 @@ window.SKYE_DOCS = {
       "example": ".voicecontrols",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -14912,9 +14947,9 @@ window.SKYE_DOCS = {
       "example": ".voicecreate [category] <name>",
       "concurrency": "<MaxConcurrency per=<BucketType.guild: 2> number=1 wait=False>",
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -14952,9 +14987,9 @@ window.SKYE_DOCS = {
       "example": ".voiceinfo [channel]",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -14992,9 +15027,9 @@ window.SKYE_DOCS = {
       "example": ".voiceinvite [channel]",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -15043,9 +15078,9 @@ window.SKYE_DOCS = {
       "example": ".voicekick <member> [reason=No reason provided]",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -15072,8 +15107,8 @@ window.SKYE_DOCS = {
       "example": ".voiceleave",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -15120,9 +15155,9 @@ window.SKYE_DOCS = {
       "example": ".voicelimit <limit> [channel]",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -15146,13 +15181,14 @@ window.SKYE_DOCS = {
       "access": "Everyone",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".voicemaster",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "`.voicemaster disable`\n`.voicemaster limit <limit>`\n`.voicemaster setup [category] [panel_channel]`"
       ]
     },
     {
@@ -15183,13 +15219,13 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".voicemaster disable",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -15220,7 +15256,7 @@ window.SKYE_DOCS = {
       "access": "Administrator (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "limit",
@@ -15235,8 +15271,8 @@ window.SKYE_DOCS = {
       "example": ".voicemaster limit <limit>",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -15304,9 +15340,9 @@ window.SKYE_DOCS = {
       "example": ".voicemaster setup [category] [panel_channel]",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -15333,8 +15369,8 @@ window.SKYE_DOCS = {
       "example": ".voicemembers",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -15381,9 +15417,9 @@ window.SKYE_DOCS = {
       "example": ".voicemute <member> [reason=No reason provided]",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -15430,9 +15466,9 @@ window.SKYE_DOCS = {
       "example": ".voicerename [channel] <name>",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -15459,8 +15495,8 @@ window.SKYE_DOCS = {
       "example": ".voicestatus",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -15507,9 +15543,9 @@ window.SKYE_DOCS = {
       "example": ".voiceunban <member> [channel]",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -15556,9 +15592,9 @@ window.SKYE_DOCS = {
       "example": ".voiceunmute <member> [reason=No reason provided]",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -15596,9 +15632,9 @@ window.SKYE_DOCS = {
       "example": ".voiceusers [channel]",
       "concurrency": null,
       "notes": [
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -15622,7 +15658,7 @@ window.SKYE_DOCS = {
       "access": "Moderate Members (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "member",
@@ -15647,10 +15683,10 @@ window.SKYE_DOCS = {
       "example": ".warn <member> [reason=No reason provided]",
       "concurrency": null,
       "notes": [
-        "Current permissions and hierarchy still apply when using IDs. Reasons are limited to 1–400 characters without control characters. Duration inputs use minutes for bare numbers or s/m/h/d combinations, with a 64-character/ten-year parser limit; timeouts are limited to 28 days. New completed actions retain up to 1,000 server-local cases, visible privately through memberhistory. Cases are not reconstructed for past actions.",
+        "Current permissions and hierarchy still apply when using IDs. Reasons are limited to 1\u2013400 characters without control characters. Duration inputs use minutes for bare numbers or s/m/h/d combinations, with a 64-character/ten-year parser limit; timeouts are limited to 28 days. New completed actions retain up to 1,000 server-local cases, visible privately through memberhistory. Cases are not reconstructed for past actions.",
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -15674,7 +15710,7 @@ window.SKYE_DOCS = {
       "access": "Moderate Members (server)",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [
         {
           "name": "member",
@@ -15689,10 +15725,10 @@ window.SKYE_DOCS = {
       "example": ".warnings <member>",
       "concurrency": null,
       "notes": [
-        "Current permissions and hierarchy still apply when using IDs. Reasons are limited to 1–400 characters without control characters. Duration inputs use minutes for bare numbers or s/m/h/d combinations, with a 64-character/ten-year parser limit; timeouts are limited to 28 days. New completed actions retain up to 1,000 server-local cases, visible privately through memberhistory. Cases are not reconstructed for past actions.",
+        "Current permissions and hierarchy still apply when using IDs. Reasons are limited to 1\u2013400 characters without control characters. Duration inputs use minutes for bare numbers or s/m/h/d combinations, with a 64-character/ten-year parser limit; timeouts are limited to 28 days. New completed actions retain up to 1,000 server-local cases, visible privately through memberhistory. Cases are not reconstructed for past actions.",
+        "Server only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding.",
-        "Server only"
+        "Prefix commands accept user/member mentions or IDs; role mentions, names or IDs; and #channel mentions, channel names or IDs. Quote names containing spaces. Member actions still require current server membership and all normal permission/hierarchy checks. Slash user/role/channel fields remain native Discord selectors; ID-only user arguments accept text IDs or mentions without integer rounding."
       ]
     },
     {
@@ -15807,8 +15843,8 @@ window.SKYE_DOCS = {
       "example": ".wordle [guess]",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Server only"
+        "Server only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -15832,16 +15868,15 @@ window.SKYE_DOCS = {
       "access": "Everyone",
       "botPermissions": [],
       "features": [
-        "economy"
+        "Enabled feature: economy"
       ],
       "cooldown": "1 use(s) per 30s; scope: member",
       "parameters": [],
       "example": ".work",
       "concurrency": null,
       "notes": [
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Enabled feature: economy",
-        "Server only"
+        "Enabled feature: economy\nServer only",
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
       ]
     },
     {
@@ -15863,7 +15898,7 @@ window.SKYE_DOCS = {
       "access": "Everyone",
       "botPermissions": [],
       "features": [],
-      "cooldown": "No command-specific cooldown declared",
+      "cooldown": null,
       "parameters": [],
       "example": ".wouldyourather",
       "concurrency": null,

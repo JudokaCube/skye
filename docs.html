@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=5" />
+  <link rel="stylesheet" href="style.css?v=6" />
   <script>
     (function () {
       try {
@@ -19,7 +19,7 @@
     })();
   </script>
 </head>
-<body class="dashboard-body skye-body skye-document-page"><div class="dash-bg-grid" aria-hidden="true"></div><div class="dash-glow" aria-hidden="true"></div><main class="skye-document skye-docs-document"><nav class="docs-nav page-navigation" aria-label="Site navigation"><a href="index.html">Home</a><a href="docs.html" aria-current="page">Docs</a><a href="policies.html">Policies</a><a href="https://discord.gg/R38JMtnBVx" target="_blank" rel="noopener noreferrer">Support ↗</a></nav><header class="dash-hero"><span class="dash-eyebrow">// skye</span><h1 class="dash-title">Docs</h1><p class="dash-desc">Setup, commands and practical guidance. Updated 28 October 2026.</p></header><nav class="docs-nav" aria-label="On this page"><a href="#guide">Getting started</a><a href="#setup">Feature setup</a><a href="#moderation">Moderation &amp; security</a><a href="#commands">Commands</a></nav>
+<body class="dashboard-body skye-body skye-document-page"><div class="dash-bg-grid" aria-hidden="true"></div><div class="dash-glow" aria-hidden="true"></div><main class="skye-document skye-docs-document"><nav class="docs-nav page-navigation" aria-label="Site navigation"><a href="index.html">Home</a><a href="docs.html" aria-current="page">Docs</a><a href="policies.html">Policies</a><a href="https://discord.gg/R38JMtnBVx" target="_blank" rel="noopener noreferrer">Support ↗</a></nav><header class="dash-hero"><span class="dash-eyebrow">// skye</span><h1 class="dash-title">Docs</h1><p class="dash-desc">Setup, commands and practical guidance. Updated 29 October 2026.</p></header><nav class="docs-nav" aria-label="On this page"><a href="#guide">Getting started</a><a href="#setup">Feature setup</a><a href="#moderation">Moderation &amp; security</a><a href="#commands">Commands</a></nav>
     <section class="docs-guide" id="guide">
       <h2>Getting started</h2>
       <div class="docs-guide-body">
@@ -59,10 +59,16 @@
 </div></section>
 <section class="docs-guide" id="moderation"><h2>Moderation and server protection</h2><div class="docs-guide-body">
 <h3>Targets, reasons and cases</h3><p>User, role and channel arguments accept IDs alongside supported mentions and names. IDs never bypass permissions or role hierarchy. Reasons must be 1–400 characters without control characters. Durations accept minutes or s/m/h/d combinations; timeouts are limited to 28 days. Recent completed moderation cases are available privately through <code>.memberhistory</code>.</p>
-<h3>Message cleanup</h3><p><code>.purge 50</code> opens a confirmation. Recent only uses bulk-eligible messages and skips older ones. Full cleanup still supports older messages, which Discord requires deleting individually. Progress and partial failures are reported; API retry delays cannot be bypassed.</p>
+<h3>Customize tickets</h3>
+<p>Run <code>.ticket setup main</code>, select the category, support role and panel destination, then choose <b>Customize everything</b>. The same complete editor is available through <code>.ticket edit main</code>. Publish with <code>.ticket panel main #support</code>. All configuration requires Administrator; settings persist per server.</p>
+<ul><li><b>Panel text and appearance:</b> title, description, outside message, author, footer, color, image, thumbnail, fields and timestamp.</li><li><b>Opening text and appearance:</b> the same controls for each new ticket's first message, with an optional inherited color.</li><li><b>Links and icons:</b> separate title/author URLs and author/footer icons for the panel and opening embed.</li><li><b>Menu and behavior:</b> buttons or dropdown, dropdown placeholder, channel-name template and separate creator/support-role ping controls.</li><li><b>Ticket reasons/options:</b> up to 25 reasons with labels, emojis, button colors, dropdown descriptions and optional opening-message overrides. Route each reason to a category/support role by ID, or leave routing blank to inherit panel defaults.</li></ul>
+<p><b>Preview panel</b> and <b>Preview opening</b> are private, suppress pings and create no channels. Custom fields use one <code>Name | Value</code> per line (up to 10); complete embeds must fit 6,000 characters. Media and link URLs must use HTTP/HTTPS without credentials. Panel text is static; opening templates share member/server placeholders with welcome, goodbye and boost, plus <code>{reason}</code>, <code>{number}</code>, <code>{panel}</code>, <code>{support}</code>, <code>{channel}</code> and <code>{channel_id}</code>. Channel placeholders are only available after creation. See <code>.serverconfig placeholders ticket</code>.</p>
+<p>Existing buttons retain their identifiers. The one-open-ticket limit, creation cooldown, private channel overwrites and server ticket cap remain enforced. A failed posted-panel refresh is reported separately from saving settings. Discord Administrators can still access private ticket channels.</p>
+<h3>Preview member announcements</h3><p>Administrators can use <code>.serverconfig preview welcome</code>, <code>.serverconfig preview leave</code> or <code>.serverconfig preview boost</code> to privately preview saved messages. Append draft text to preview it without saving. The slash equivalent is <code>/automation preview</code>. Your account is the sample member; previews do not ping anyone, post in announcement channels or enable disabled features.</p>
+<h3>Message cleanup</h3><p><code>.purge 50</code> starts immediately. Recent messages use bulk batches of up to 100; older messages require individual deletion. There is no added per-message delay, but Discord rate limits still apply. The running status message is removed after success; partial-failure notices remain visible. Permissions and abuse limits are still enforced.</p>
 <h3>Anti-nuke and anti-raid</h3><p>Both protections start disabled. Review <code>.antinuke rules</code> and <code>.antiraid</code> before enabling enforcement. Anti-nuke supports owner-approved escalation and fallback responses; anti-raid offers optional repeated joins, young-account bursts, newcomer spam detection, punishment budgets and temporary verification. Audit logs arrive after actions, and the bot cannot cross Discord role hierarchy or guarantee prevention.</p>
 <h3>AutoMod</h3><p>Add blocked terms with <code>.filter add</code>, configure the spam threshold with <code>.filter spam set</code>, choose the response, then enable the relevant filters. Exemptions and punishment cooldowns remain separate from deleting matching messages.</p>
-</div></section><section id="commands" class="docs-command-section"><h2>Commands</h2><p class="book-modal-sub">Browse all 364 registered commands and subcommands. Open an entry for syntax, aliases, arguments, examples and required permissions.</p><div class="book-search-row">
+</div></section><section id="commands" class="docs-command-section"><h2>Commands</h2><p class="book-modal-sub">Browse all 365 registered commands and subcommands. Open an entry for syntax, aliases, arguments, examples and required permissions.</p><div class="book-search-row">
           <span class="book-search-icon">🔍</span>
           <input
             type="text"
@@ -94,4 +100,4 @@
     <span class="theme-icon theme-icon-sun">☀️</span>
   </button>
 
-<script src="commands-data.js?v=4"></script><script src="script.js?v=4"></script></body></html>
+<script src="commands-data.js?v=6"></script><script src="script.js?v=6"></script></body></html>
