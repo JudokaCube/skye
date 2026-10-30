@@ -1,6 +1,6 @@
-// Generated offline from the registered bot commands.
+// Generated from the registered bot commands; help refreshed offline.
 window.SKYE_DOCS = {
-  "updated": "2026-10-29",
+  "updated": "2026-10-30",
   "count": 365,
   "commands": [
     {
@@ -12742,7 +12742,7 @@ window.SKYE_DOCS = {
       "name": "serversetup",
       "category": "Server Setup",
       "serverOnly": true,
-      "description": "Open or resume guided core server setup. Configure existing features, channels, roles and thresholds; each change saves separately. Finish shows current saved settings.",
+      "description": "Open or resume step-by-step server setup. Answer one question at a time, select relevant channels/roles, enable or explicitly disable features, or skip without changes. Finish reviews saved settings.",
       "prefix": ".serversetup",
       "slash": "/setup overview",
       "aliases": [
@@ -12762,9 +12762,9 @@ window.SKYE_DOCS = {
       "example": ".serversetup",
       "concurrency": null,
       "notes": [
-        "Use /setup overview for a private wizard, or .serversetup in a staff-only text channel. Choose a section and setting, optionally select channels/roles, then Configure. Each operation uses the original command checks and saves independently. Reopen to resume; Finish shows saved state, not a live delivery guarantee.",
         "Only the initiating administrator can use this menu. Anti-nuke owner restrictions still apply.\nServer only",
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
+        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
+        "Use /setup overview for a private wizard, or .serversetup in a staff-only text channel. Answer one feature question at a time. Set up / enable asks only for relevant channels, roles and values. Skip preserves current settings; Disable explicitly turns a feature off. Previous revisits a step; Finish reviews saved settings. Disabled features skip dependent questions. Each save uses the original command permissions, validation and cooldowns. Reopen to resume the saved step; unanswered drafts are not saved. Ticket setup opens its full customization menu."
       ]
     },
     {
