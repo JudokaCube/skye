@@ -1,6 +1,5 @@
-// Generated from the registered bot commands; help refreshed offline.
 window.SKYE_DOCS = {
-  "updated": "2026-10-30",
+  "updated": "2026-10-31",
   "count": 365,
   "commands": [
     {
@@ -10549,7 +10548,7 @@ window.SKYE_DOCS = {
       "name": "quote",
       "category": "Messages & Embeds",
       "serverOnly": true,
-      "description": "Quote an accessible server message with a safe link to its original.",
+      "description": "Create a black quote image with the author\u2019s avatar, message and attribution. Reply to a message or supply its ID/link in the same channel. Long quotes are shortened; View original opens the full message.",
       "prefix": ".quote [message]",
       "slash": "/messages quote",
       "aliases": [
@@ -10562,7 +10561,9 @@ window.SKYE_DOCS = {
       ],
       "parentAliases": [],
       "access": "Everyone",
-      "botPermissions": [],
+      "botPermissions": [
+        "Attach Files (channel)"
+      ],
       "features": [],
       "cooldown": "3 use(s) per 12s; scope: member",
       "parameters": [
@@ -10578,10 +10579,9 @@ window.SKYE_DOCS = {
         }
       ],
       "example": ".quote [message]",
-      "concurrency": null,
+      "concurrency": "One quote image at a time across the bot; additional requests must retry.",
       "notes": [
-        "Server only",
-        "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access."
+        "Reply to a message with .quote, or provide its message ID or link. Creates a black PNG card using the author avatar and attribution. Run in the original channel; normal access checks apply. Long quotes are shortened; View original links to the full message. If the avatar is unavailable, a plain background is used. Some emoji or scripts may lack font glyphs."
       ]
     },
     {
@@ -12742,7 +12742,7 @@ window.SKYE_DOCS = {
       "name": "serversetup",
       "category": "Server Setup",
       "serverOnly": true,
-      "description": "Open or resume step-by-step server setup. Answer one question at a time, select relevant channels/roles, enable or explicitly disable features, or skip without changes. Finish reviews saved settings.",
+      "description": "Open or resume step-by-step server setup. Answer one question at a time, select relevant channels/roles, enable or explicitly disable features, or skip without changes. VoiceMaster creates missing resources automatically; Tickets opens the main panel editor. Finish reviews saved settings.",
       "prefix": ".serversetup",
       "slash": "/setup overview",
       "aliases": [
@@ -12764,7 +12764,7 @@ window.SKYE_DOCS = {
       "notes": [
         "Only the initiating administrator can use this menu. Anti-nuke owner restrictions still apply.\nServer only",
         "Command execution still checks current access, feature settings, target hierarchy/ownership and other applicable safeguards. Viewing help does not grant access.",
-        "Use /setup overview for a private wizard, or .serversetup in a staff-only text channel. Answer one feature question at a time. Set up / enable asks only for relevant channels, roles and values. Skip preserves current settings; Disable explicitly turns a feature off. Previous revisits a step; Finish reviews saved settings. Disabled features skip dependent questions. Each save uses the original command permissions, validation and cooldowns. Reopen to resume the saved step; unanswered drafts are not saved. Ticket setup opens its full customization menu."
+        "Use /setup overview for a private wizard, or .serversetup in a staff-only text channel. Answer one feature question at a time. Set up / enable asks only for relevant channels, roles and values. Skip preserves current settings; Disable explicitly turns a feature off. Previous revisits a step; Finish reviews saved settings. Disabled features skip dependent questions. Each save uses the original command permissions, validation and cooldowns. Reopen to resume the saved step; unanswered drafts are not saved. VoiceMaster setup automatically reuses saved resources or creates its category, lobby and control channel; use voicemaster setup directly to select existing resources. Ticket setup opens the main panel customization menu without asking for a panel name."
       ]
     },
     {
